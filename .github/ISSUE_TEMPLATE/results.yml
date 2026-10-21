@@ -1,0 +1,25 @@
+name: Results on your photos or robot data
+description: What the check (or a VLM) got right and wrong on your scenes
+labels: [results]
+body:
+  - type: input
+    id: setup
+    attributes:
+      label: Camera and setup
+      placeholder: e.g. phone model, distance to table, slide between views, robot camera
+    validations:
+      required: true
+  - type: textarea
+    id: scenes
+    attributes:
+      label: Scenes
+      description: What you photographed (real objects, prints, cut-outs, glass...), how many pairs.
+    validations:
+      required: true
+  - type: textarea
+    id: result
+    attributes:
+      label: What happened
+      description: Verdicts vs what was really there. Misreads are the most useful part. Include relative_parallax_px if you can.
+    validations:
+      required: true

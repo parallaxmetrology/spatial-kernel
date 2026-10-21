@@ -1,0 +1,272 @@
+[
+ {
+  "id": "cut-out-mug-01",
+  "noun": "mug",
+  "real": false,
+  "kind": "a cut-out print of a mug",
+  "gemini_pass": false,
+  "gemini_text": "VERDICT: FAIL\nThe object on the table appears to be a flat sticker or image of a mug, not a real physical mug.",
+  "verdict": "FLAT",
+  "rel_px": -9.7
+ },
+ {
+  "id": "cut-out-mug-02",
+  "noun": "mug",
+  "real": false,
+  "kind": "a cut-out print of a mug",
+  "gemini_pass": false,
+  "gemini_text": "VERDICT: FAIL\nThe object on the table appears to be a flat 2D cutout or sticker of a mug rather than a real 3D mug.",
+  "verdict": "FLAT",
+  "rel_px": 2.1
+ },
+ {
+  "id": "cut-out-mug-03",
+  "noun": "mug",
+  "real": false,
+  "kind": "a cut-out print of a mug",
+  "gemini_pass": false,
+  "gemini_text": "VERDICT: FAIL\nThe object shown is a flat image or sticker of a mug, not a real three-dimensional mug resting on the table.",
+  "verdict": "FLAT",
+  "rel_px": -2.9
+ },
+ {
+  "id": "full-page-mug-01",
+  "noun": "mug",
+  "real": false,
+  "kind": "a full-page print of a mug",
+  "gemini_pass": false,
+  "gemini_text": "VERDICT: FAIL\nThe mug shown is a 2D image printed on a flat piece of paper, not a real object.",
+  "verdict": "FLAT",
+  "rel_px": -3.6
+ },
+ {
+  "id": "full-page-mug-02",
+  "noun": "mug",
+  "real": false,
+  "kind": "a full-page print of a mug",
+  "gemini_pass": true,
+  "gemini_text": "VERDICT: PASS\nA mug is present and resting on the sheet of paper on the table.",
+  "verdict": "FLAT",
+  "rel_px": 4.7
+ },
+ {
+  "id": "full-page-mug-03",
+  "noun": "mug",
+  "real": false,
+  "kind": "a full-page print of a mug",
+  "gemini_pass": false,
+  "gemini_text": "VERDICT: FAIL\nThe photograph shows a picture of a mug on a piece of paper, not an actual physical mug on the table.",
+  "verdict": "FLAT",
+  "rel_px": -4.6
+ },
+ {
+  "id": "full-page-paper-cup-01",
+  "noun": "cup",
+  "real": false,
+  "kind": "a full-page print of a paper cup",
+  "gemini_pass": true,
+  "gemini_text": "VERDICT: PASS\nA cup is clearly visible resting on the table within the bounds of the white paper.",
+  "verdict": "FLAT",
+  "rel_px": 5.6
+ },
+ {
+  "id": "full-page-paper-cup-02",
+  "noun": "cup",
+  "real": false,
+  "kind": "a full-page print of a paper cup",
+  "gemini_pass": true,
+  "gemini_text": "VERDICT: PASS\nA white cup is present and resting on the sheet of paper on the table.",
+  "verdict": "FLAT",
+  "rel_px": -4.0
+ },
+ {
+  "id": "full-page-paper-cup-03",
+  "noun": "cup",
+  "real": false,
+  "kind": "a full-page print of a paper cup",
+  "gemini_pass": true,
+  "gemini_text": "VERDICT: PASS\nA paper cup is present on the table and appears to be resting upright.",
+  "verdict": "FLAT",
+  "rel_px": -6.0
+ },
+ {
+  "id": "scotch-box-fake-3d-01",
+  "noun": "box of Scotch tape",
+  "real": false,
+  "kind": "a flattened box with printed 3D shading",
+  "gemini_pass": true,
+  "gemini_text": "VERDICT: PASS\nA box of Scotch tape is present and resting on the table.",
+  "verdict": "FLAT",
+  "rel_px": -0.8
+ },
+ {
+  "id": "scotch-box-fake-3d-02",
+  "noun": "box of Scotch tape",
+  "real": false,
+  "kind": "a flattened box with printed 3D shading",
+  "gemini_pass": true,
+  "gemini_text": "VERDICT: PASS\nA box of Scotch Magic Tape is present and resting on the table.",
+  "verdict": "FLAT",
+  "rel_px": -3.7
+ },
+ {
+  "id": "scotch-box-fake-3d-03",
+  "noun": "box of Scotch tape",
+  "real": false,
+  "kind": "a flattened box with printed 3D shading",
+  "gemini_pass": true,
+  "gemini_text": "VERDICT: PASS\nA box of Scotch Magic Tape is present and resting on the table.",
+  "verdict": "FLAT",
+  "rel_px": -5.0
+ },
+ {
+  "id": "scotch-box-flat-01",
+  "noun": "box of Scotch tape",
+  "real": false,
+  "kind": "a flat print of a Scotch tape box",
+  "gemini_pass": true,
+  "gemini_text": "VERDICT: PASS\nThe photograph shows a flat green Scotch Magic Tape package resting on the table.",
+  "verdict": "FLAT",
+  "rel_px": -12.3
+ },
+ {
+  "id": "scotch-box-flat-02",
+  "noun": "box of Scotch tape",
+  "real": false,
+  "kind": "a flat print of a Scotch tape box",
+  "gemini_pass": true,
+  "gemini_text": "VERDICT: PASS\nA box of Scotch Magic Tape is resting flat on the table's surface.",
+  "verdict": "FLAT",
+  "rel_px": -11.7
+ },
+ {
+  "id": "scotch-box-flat-03",
+  "noun": "box of Scotch tape",
+  "real": false,
+  "kind": "a flat print of a Scotch tape box",
+  "gemini_pass": true,
+  "gemini_text": "VERDICT: PASS\nA green box of Scotch Magic Tape is present and resting on the tabletop.",
+  "verdict": "FLAT",
+  "rel_px": -5.4
+ },
+ {
+  "id": "real-mug-01",
+  "noun": "mug",
+  "real": true,
+  "kind": "a real mug",
+  "gemini_pass": true,
+  "gemini_text": "VERDICT: PASS\nA peach-colored mug is resting upright on the table surface.",
+  "verdict": "RAISED",
+  "rel_px": -34.7
+ },
+ {
+  "id": "real-mug-02",
+  "noun": "mug",
+  "real": true,
+  "kind": "a real mug",
+  "gemini_pass": true,
+  "gemini_text": "VERDICT: PASS\nA peach-colored mug is resting upright on the white table surface.",
+  "verdict": "RAISED",
+  "rel_px": -42.0
+ },
+ {
+  "id": "real-mug-03",
+  "noun": "mug",
+  "real": true,
+  "kind": "a real mug",
+  "gemini_pass": true,
+  "gemini_text": "VERDICT: PASS\nThere is a single orange mug resting upright on the table.",
+  "verdict": "RAISED",
+  "rel_px": -47.0
+ },
+ {
+  "id": "paper-cup-01",
+  "noun": "cup",
+  "real": true,
+  "kind": "a real paper cup",
+  "gemini_pass": true,
+  "gemini_text": "VERDICT: PASS\nA white cup is present and resting upright on the table.",
+  "verdict": "RAISED",
+  "rel_px": -78.7
+ },
+ {
+  "id": "paper-cup-02",
+  "noun": "cup",
+  "real": true,
+  "kind": "a real paper cup",
+  "gemini_pass": true,
+  "gemini_text": "VERDICT: PASS\nThere is a white paper cup resting on the table.",
+  "verdict": "RAISED",
+  "rel_px": -67.1
+ },
+ {
+  "id": "paper-cup-03",
+  "noun": "cup",
+  "real": true,
+  "kind": "a real paper cup",
+  "gemini_pass": true,
+  "gemini_text": "VERDICT: PASS\nA single white cup is upright and present on the table.",
+  "verdict": "RAISED",
+  "rel_px": -58.3
+ },
+ {
+  "id": "scotch-box-side-01",
+  "noun": "box of Scotch tape",
+  "real": true,
+  "kind": "a real Scotch tape box on its side",
+  "gemini_pass": true,
+  "gemini_text": "VERDICT: PASS\nA green box of Scotch tape is present and resting on the table.",
+  "verdict": "RAISED",
+  "rel_px": -31.7
+ },
+ {
+  "id": "scotch-box-side-02",
+  "noun": "box of Scotch tape",
+  "real": true,
+  "kind": "a real Scotch tape box on its side",
+  "gemini_pass": true,
+  "gemini_text": "VERDICT: PASS\nA green plaid box of Scotch magic tape is resting on the table.",
+  "verdict": "RAISED",
+  "rel_px": -31.1
+ },
+ {
+  "id": "scotch-box-side-03",
+  "noun": "box of Scotch tape",
+  "real": true,
+  "kind": "a real Scotch tape box on its side",
+  "gemini_pass": true,
+  "gemini_text": "VERDICT: PASS\nA box of Scotch tape is present and resting on the table.",
+  "verdict": "RAISED",
+  "rel_px": -18.0
+ },
+ {
+  "id": "bare-table-01",
+  "noun": "mug",
+  "real": false,
+  "kind": "an empty table",
+  "gemini_pass": false,
+  "gemini_text": "VERDICT: FAIL\nThere is no mug present on the table in the image.",
+  "verdict": "no-object",
+  "rel_px": null
+ },
+ {
+  "id": "bare-table-02",
+  "noun": "mug",
+  "real": false,
+  "kind": "an empty table",
+  "gemini_pass": false,
+  "gemini_text": "VERDICT: FAIL\nThere is no mug present on the table.",
+  "verdict": "no-object",
+  "rel_px": null
+ },
+ {
+  "id": "bare-table-03",
+  "noun": "mug",
+  "real": false,
+  "kind": "an empty table",
+  "gemini_pass": false,
+  "gemini_text": "VERDICT: FAIL\nThere is no mug present on the table in the image.",
+  "verdict": "no-object",
+  "rel_px": null
+ }
+]

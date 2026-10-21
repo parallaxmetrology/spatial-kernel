@@ -1,0 +1,382 @@
+{
+  "Placement 00": {
+    "path": "data/placement/Placement 00.jpeg",
+    "W": 1400,
+    "H": 1050,
+    "px_per_cm": 26.196094438629768,
+    "error": "missing object"
+  },
+  "Placement 01": {
+    "path": "data/placement/Placement 01.jpeg",
+    "W": 1400,
+    "H": 1050,
+    "px_per_cm": 26.27558517837258,
+    "error": "missing green target"
+  },
+  "Placement 02": {
+    "path": "data/placement/Placement 02.jpeg",
+    "W": 1400,
+    "H": 1050,
+    "px_per_cm": 26.195883630818127,
+    "error": "missing green target"
+  },
+  "Placement 03": {
+    "path": "data/placement/Placement 03.jpeg",
+    "W": 1400,
+    "H": 1050,
+    "px_per_cm": 26.14695684659062,
+    "target_px": [
+      508.5245737211635,
+      758.6298896690071
+    ],
+    "object_px": [
+      823.5558381093357,
+      480.46022950114497
+    ],
+    "gap_px": 420.3,
+    "gap_cm": 16.07,
+    "gap_norm": 0.3,
+    "correction_norm": [
+      -0.225,
+      0.199
+    ],
+    "instrument": "FAIL",
+    "gemini_implied_gap_cm": 15.35,
+    "gemini_self_inconsistent": false,
+    "gemini_pass": false,
+    "gemini_point": [
+      810.5999999999999,
+      499.79999999999995
+    ],
+    "gemini_target_point": [
+      489.99999999999994,
+      741.3
+    ],
+    "verdict_raw": "VERDICT: FAIL\nThe mug is placed significantly to the right of the green marker.",
+    "obj_point_raw": "```json\n[579, 476]\n```",
+    "tgt_point_raw": "```json\n[350, 706]\n```"
+  },
+  "Placement 04": {
+    "path": "data/placement/Placement 04.jpeg",
+    "W": 1400,
+    "H": 1050,
+    "px_per_cm": 25.887250405477648,
+    "target_px": [
+      496.798820754717,
+      737.3275943396227
+    ],
+    "object_px": [
+      939.4162617115434,
+      413.9354764804476
+    ],
+    "gap_px": 548.2,
+    "gap_cm": 21.18,
+    "gap_norm": 0.392,
+    "correction_norm": [
+      -0.316,
+      0.231
+    ],
+    "instrument": "FAIL",
+    "gemini_implied_gap_cm": 20.7,
+    "gemini_self_inconsistent": false,
+    "gemini_pass": false,
+    "gemini_point": [
+      928.2,
+      421.05
+    ],
+    "gemini_target_point": [
+      495.59999999999997,
+      737.0999999999999
+    ],
+    "verdict_raw": "VERDICT: FAIL\nThe mug is positioned to the right of the green target marker.",
+    "obj_point_raw": "```json\n[663, 401]\n```",
+    "tgt_point_raw": "```json\n[354, 702]\n```"
+  },
+  "Placement 05": {
+    "path": "data/placement/Placement 05.jpeg",
+    "W": 1400,
+    "H": 1050,
+    "px_per_cm": 25.881699880256253,
+    "target_px": [
+      495.9122807017544,
+      737.6741854636591
+    ],
+    "object_px": [
+      1068.1956588737728,
+      352.9800114471888
+    ],
+    "gap_px": 689.6,
+    "gap_cm": 26.64,
+    "gap_norm": 0.493,
+    "correction_norm": [
+      -0.409,
+      0.275
+    ],
+    "instrument": "FAIL",
+    "gemini_implied_gap_cm": 26.74,
+    "gemini_self_inconsistent": false,
+    "gemini_pass": false,
+    "gemini_point": [
+      1065.4,
+      345.45
+    ],
+    "gemini_target_point": [
+      498.4,
+      742.3499999999999
+    ],
+    "verdict_raw": "VERDICT: FAIL\nThe mug is located in the upper right quadrant of the image, while the green marker is in the lower left.",
+    "obj_point_raw": "```json\n[761, 329]\n```",
+    "tgt_point_raw": "```json\n[356, 707]\n```"
+  },
+  "Placement 06": {
+    "path": "data/placement/Placement 06.jpeg",
+    "W": 1400,
+    "H": 1050,
+    "px_per_cm": 25.69251579449142,
+    "target_px": [
+      506.6096737907761,
+      738.3637045369329
+    ],
+    "object_px": [
+      1150.47821193933,
+      286.75789804525914
+    ],
+    "gap_px": 786.5,
+    "gap_cm": 30.61,
+    "gap_norm": 0.562,
+    "correction_norm": [
+      -0.46,
+      0.323
+    ],
+    "instrument": "FAIL",
+    "gemini_implied_gap_cm": 30.8,
+    "gemini_self_inconsistent": false,
+    "gemini_pass": false,
+    "gemini_point": [
+      1143.8,
+      273.0
+    ],
+    "gemini_target_point": [
+      499.79999999999995,
+      732.9
+    ],
+    "verdict_raw": "VERDICT: FAIL\nThe mug is placed in the upper right quadrant of the image, far away from the green square marker.",
+    "obj_point_raw": "```json\n[817, 260]\n```",
+    "tgt_point_raw": "```json\n[357, 698]\n```"
+  },
+  "Placement 07": {
+    "path": "data/placement/Placement 07.jpeg",
+    "W": 1400,
+    "H": 1050,
+    "px_per_cm": 25.51243172947865,
+    "target_px": [
+      497.9527760051053,
+      737.7872793022761
+    ],
+    "object_px": [
+      1150.7636571143591,
+      221.01100049871485
+    ],
+    "gap_px": 832.6,
+    "gap_cm": 32.63,
+    "gap_norm": 0.595,
+    "correction_norm": [
+      -0.466,
+      0.369
+    ],
+    "instrument": "FAIL",
+    "gemini_implied_gap_cm": 32.05,
+    "gemini_self_inconsistent": false,
+    "gemini_pass": false,
+    "gemini_point": [
+      1136.8000000000002,
+      228.9
+    ],
+    "gemini_target_point": [
+      497.0,
+      738.15
+    ],
+    "verdict_raw": "VERDICT: FAIL\nThe mug is in the top right corner, while the green square marker is in the bottom left area.",
+    "obj_point_raw": "```json\n[812, 218]\n```",
+    "tgt_point_raw": "```json\n[355, 703]\n```"
+  },
+  "Placement 08": {
+    "path": "data/placement/Placement 08.jpeg",
+    "W": 1400,
+    "H": 1050,
+    "px_per_cm": 25.156478305852428,
+    "target_px": [
+      500.92552026286967,
+      740.3088718510405
+    ],
+    "object_px": [
+      663.2682180036742,
+      608.536852418861
+    ],
+    "gap_px": 209.1,
+    "gap_cm": 8.31,
+    "gap_norm": 0.149,
+    "correction_norm": [
+      -0.116,
+      0.094
+    ],
+    "instrument": "FAIL",
+    "gemini_implied_gap_cm": 6.98,
+    "gemini_self_inconsistent": false,
+    "gemini_pass": false,
+    "gemini_point": [
+      663.6,
+      686.7
+    ],
+    "gemini_target_point": [
+      494.2,
+      732.9
+    ],
+    "verdict_raw": "VERDICT: FAIL\nThe mug is placed to the right of the green target marker, not centered on it.",
+    "obj_point_raw": "```json\n[474, 654]\n```",
+    "tgt_point_raw": "```json\n[353, 698]\n```"
+  },
+  "Placement 09": {
+    "path": "data/placement/Placement 09.jpeg",
+    "W": 1400,
+    "H": 1050,
+    "px_per_cm": 25.146751084224437,
+    "target_px": [
+      492.86132315521627,
+      727.0400763358779
+    ],
+    "object_px": [
+      670.9834507042253,
+      601.2517605633802
+    ],
+    "gap_px": 218.1,
+    "gap_cm": 8.67,
+    "gap_norm": 0.156,
+    "correction_norm": [
+      -0.127,
+      0.09
+    ],
+    "instrument": "FAIL",
+    "gemini_implied_gap_cm": 6.97,
+    "gemini_self_inconsistent": false,
+    "gemini_pass": false,
+    "gemini_point": [
+      663.6,
+      682.5
+    ],
+    "gemini_target_point": [
+      494.2,
+      727.65
+    ],
+    "verdict_raw": "VERDICT: FAIL\nThe mug is placed significantly to the right of the green target marker.",
+    "obj_point_raw": "```json\n[474, 650]\n```",
+    "tgt_point_raw": "```json\n[353, 693]\n```"
+  },
+  "Placement 10": {
+    "path": "data/placement/Placement 10.jpeg",
+    "W": 1400,
+    "H": 1050,
+    "px_per_cm": 25.092590187789828,
+    "target_px": [
+      513.2897196261682,
+      752.4523364485981
+    ],
+    "object_px": [
+      820.0800084620266,
+      573.7248360482336
+    ],
+    "gap_px": 355.1,
+    "gap_cm": 14.15,
+    "gap_norm": 0.254,
+    "correction_norm": [
+      -0.219,
+      0.128
+    ],
+    "instrument": "FAIL",
+    "gemini_implied_gap_cm": 13.12,
+    "gemini_self_inconsistent": false,
+    "gemini_pass": false,
+    "gemini_point": [
+      806.4,
+      621.6
+    ],
+    "gemini_target_point": [
+      497.0,
+      733.9499999999999
+    ],
+    "verdict_raw": "VERDICT: FAIL\nThe mug is placed to the right of the green target marker, not on it.",
+    "obj_point_raw": "```json\n[576, 592]\n```",
+    "tgt_point_raw": "```json\n[355, 699]\n```"
+  },
+  "Placement 11": {
+    "path": "data/placement/Placement 11.jpeg",
+    "W": 1400,
+    "H": 1050,
+    "px_per_cm": 25.071185352228966,
+    "error": "missing green target"
+  },
+  "Placement 12": {
+    "path": "data/placement/Placement 12.jpeg",
+    "W": 1400,
+    "H": 1050,
+    "px_per_cm": 25.180171314660335,
+    "error": "missing green target"
+  },
+  "Placement 13": {
+    "path": "data/placement/Placement 13.jpeg",
+    "W": 1400,
+    "H": 1050,
+    "px_per_cm": 25.110734506509388,
+    "target_px": [
+      506.5858657243816,
+      736.1579505300354
+    ],
+    "object_px": [
+      1188.8324388189897,
+      551.5827373395845
+    ],
+    "gap_px": 706.8,
+    "gap_cm": 28.15,
+    "gap_norm": 0.505,
+    "correction_norm": [
+      -0.487,
+      0.132
+    ],
+    "instrument": "FAIL",
+    "gemini_implied_gap_cm": 27.68,
+    "gemini_self_inconsistent": false,
+    "gemini_pass": false,
+    "gemini_point": [
+      1177.3999999999999,
+      572.25
+    ],
+    "gemini_target_point": [
+      501.2,
+      732.9
+    ],
+    "verdict_raw": "VERDICT: FAIL\nThe mug is situated to the right of the green target marker, not on it.",
+    "obj_point_raw": "```json\n[841, 545]\n```",
+    "tgt_point_raw": "```json\n[358, 698]\n```"
+  },
+  "Placement 14": {
+    "path": "data/placement/Placement 14.jpeg",
+    "W": 1400,
+    "H": 1050,
+    "px_per_cm": 25.096385461991872,
+    "error": "missing green target"
+  },
+  "Placement 15": {
+    "path": "data/placement/Placement 15.jpeg",
+    "W": 1400,
+    "H": 1050,
+    "px_per_cm": 24.986408968239033,
+    "error": "missing green target"
+  },
+  "Placement 16": {
+    "path": "data/placement/Placement 16.jpeg",
+    "W": 1400,
+    "H": 1050,
+    "px_per_cm": 24.924866191142037,
+    "error": "missing green target"
+  }
+}

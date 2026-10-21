@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Real or printed?</title>
+<meta name="description" content="A robot was told to put a mug on the table. Is that a real mug, or a sheet of paper? Gemini Robotics-ER passed 10 of 18 printed decoys. Your turn, then see a second photo.">
+<meta property="og:title" content="Real or printed?">
+<meta property="og:description" content="Gemini Robotics-ER passed 10 of 18 printed decoys as real objects. Can you do better from one photo? Then flip to a second view and watch the prints stay flat.">
+<meta property="og:image" content="https://parallaxmetrology.github.io/spatial-kernel/og-real-or-printed.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500&family=DM+Mono:wght@400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #0a0a0a; --surface: #111; --raised: #161616; --border: #1e1e1e; --border-light: #2a2a2a;
+    --text: #e8e4dc; --muted: #8a867f; --dim: #555;
+    --robo: #8890b8; --robo-dim: rgba(136,144,184,.12); --robo-border: rgba(136,144,184,.35);
+    --accent: #c4a882; --good: #8fb996; --bad: #e66e5a;
+    --mono: 'DM Mono', ui-monospace, monospace; --serif: 'Cormorant Garamond', Georgia, serif; --sans: 'DM Sans', system-ui, sans-serif;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  [hidden] { display: none !important; }
+  body { background: var(--bg); color: var(--text); font-family: var(--sans); font-weight: 300; line-height: 1.6; }
+  a { color: var(--robo); text-decoration: none; } a:hover { text-decoration: underline; }
+  .wrap { max-width: 1000px; margin: 0 auto; padding: 0 20px; }
+  header { border-bottom: 1px solid var(--border); }
+  header .wrap { display: flex; justify-content: space-between; align-items: center; min-height: 56px; gap: 16px; flex-wrap: wrap; }
+  .logo { font-family: var(--mono); font-size: 12px; letter-spacing: .14em; text-transform: uppercase; color: var(--robo); }
+  nav a { font-family: var(--mono); font-size: 11px; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); margin-left: 18px; }
+  .eyebrow { font-family: var(--mono); font-size: 11px; letter-spacing: .14em; text-transform: uppercase; color: var(--robo); }
+  h1 { font-family: var(--serif); font-weight: 400; font-size: clamp(38px, 6vw, 60px); line-height: 1.05; margin: 10px 0 12px; }
+  h1 em { color: var(--robo); }
+  h2 { font-family: var(--serif); font-weight: 400; font-size: 30px; line-height: 1.15; }
+  .lede { color: var(--muted); max-width: 660px; font-size: 17px; }
+  .lede b { color: var(--text); font-weight: 400; }
+  section { padding: 34px 0; }
+  button { font-family: var(--mono); font-size: 11px; letter-spacing: .1em; text-transform: uppercase; color: var(--text); background: transparent; border: 1px solid var(--border-light); border-radius: 4px; padding: 12px 18px; cursor: pointer; }
+  button:hover { border-color: var(--robo); color: var(--robo); }
+  button.primary { border-color: var(--robo-border); color: var(--robo); background: var(--robo-dim); }
+  button:disabled { opacity: .4; cursor: default; }
+  .row { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; }
+  .how { display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 14px 26px; margin-top: 28px; }
+  .how div { border-top: 1px solid var(--border); padding-top: 10px; font-size: 14px; color: var(--muted); }
+  .how b { display: block; font-family: var(--mono); font-weight: 400; font-size: 11px; letter-spacing: .1em; text-transform: uppercase; color: var(--robo); margin-bottom: 4px; }
+
+  .hud { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 8px 14px; font-family: var(--mono); font-size: 11px; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); margin-bottom: 12px; }
+  .hud .you { color: var(--good); } .hud .gem { color: var(--accent); } .hud .geo { color: var(--robo); }
+  .task { font-family: var(--mono); font-size: 11px; letter-spacing: .12em; text-transform: uppercase; color: var(--dim); }
+  .question { font-family: var(--serif); font-size: clamp(24px, 3.6vw, 30px); margin: 4px 0 12px; line-height: 1.2; }
+  .question em { color: var(--robo); font-style: normal; }
+  .stage { position: relative; background: var(--surface); border: 1px solid var(--border); border-radius: 6px; overflow: hidden; }
+  .stage img { display: block; width: 100%; height: auto; aspect-ratio: 4 / 3; background: var(--raised); }
+  .stage .tag { position: absolute; left: 10px; top: 10px; font-family: var(--mono); font-size: 10px; letter-spacing: .12em; text-transform: uppercase; background: rgba(10,10,10,.75); color: var(--text); padding: 4px 8px; border-radius: 3px; }
+  .answers { margin-top: 14px; }
+  .answers button { flex: 1 1 200px; padding: 15px 18px; font-size: 12px; }
+  .reveal { margin-top: 18px; display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 12px; }
+  .card { background: var(--surface); border: 1px solid var(--border); border-radius: 6px; padding: 14px 16px; }
+  .card .k { font-family: var(--mono); font-size: 10px; letter-spacing: .12em; text-transform: uppercase; color: var(--dim); }
+  .card .v { font-family: var(--serif); font-size: 24px; line-height: 1.2; margin: 4px 0 6px; }
+  .card .t { font-size: 14px; color: var(--muted); }
+  .card .q { font-size: 14px; color: #d6d2ca; font-style: italic; }
+  .ok { color: var(--good); } .no { color: var(--bad); }
+  .truth { font-size: 17px; margin-top: 18px; }
+  .truth b { font-weight: 400; }
+  .flipnote { color: var(--muted); font-size: 14px; margin-top: 10px; max-width: 760px; }
+  .next { margin-top: 16px; }
+
+  .sum-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 12px; margin: 20px 0; }
+  .stat { background: var(--surface); border: 1px solid var(--border); border-radius: 6px; padding: 16px; }
+  .stat .k { font-family: var(--mono); font-size: 10px; letter-spacing: .12em; text-transform: uppercase; color: var(--dim); }
+  .stat .v { font-family: var(--serif); font-size: 36px; line-height: 1.1; margin-top: 4px; }
+  .stat .n { font-size: 13px; color: var(--muted); }
+  .share { margin-top: 14px; background: var(--raised); border: 1px solid var(--border); border-radius: 6px; padding: 14px 16px; font-family: var(--mono); font-size: 12px; color: var(--muted); white-space: pre-wrap; }
+  .about { border-top: 1px solid var(--border); color: var(--muted); font-size: 14px; }
+  .about p + p { margin-top: 10px; }
+  .about b { color: var(--text); font-weight: 400; }
+  code { font-family: var(--mono); font-size: 12px; background: var(--raised); padding: 1px 5px; border-radius: 3px; color: var(--text); }
+  footer { border-top: 1px solid var(--border); padding: 24px 0 44px; color: var(--dim); font-size: 13px; }
+  @media (max-width: 560px) { nav a { margin-left: 0; margin-right: 14px; } .card .v { font-size: 21px; } }
+</style>
+</head>
+<body>
+<header><div class="wrap">
+  <a class="logo" href="https://www.parallaxmetrology.com">Parallax Metrology</a>
+  <nav><a href="https://github.com/parallaxmetrology/spatial-kernel">Code</a><a href="https://www.parallaxmetrology.com/SPATIAL_KERNEL_PAPER.html">Paper</a></nav>
+</div></header>
+
+<main class="wrap">
+  <section id="intro">
+    <p class="eyebrow">Spatial Kernel · a game</p>
+    <h1>Real or <em>printed?</em></h1>
+    <p class="lede">A robot was told to put a mug on the table. A vision model looked at the photo and judged whether it worked. Sometimes the "mug" is a sheet of paper. <b>Gemini Robotics-ER passed 10 of 18 printed decoys as real objects.</b> You get the same single photo it got. Then flip to a second photo taken 10 cm to the side.</p>
+    <div class="how">
+      <div><b>1 · One photo</b>Is there a real object on the table? Same question, same picture the model saw.</div>
+      <div><b>2 · The model</b>See what Gemini Robotics-ER answered, in its own words.</div>
+      <div><b>3 · Second view</b>Both photos are lined up on the two black dots. The table holds still; a real object jumps, a print doesn't.</div>
+    </div>
+    <div class="row" style="margin-top:28px"><button class="primary" id="start">Play 10 rounds</button></div>
+  </section>
+
+  <section id="game" hidden>
+    <div class="hud"><span id="round"></span><span><span class="you" id="sYou"></span> · <span class="gem" id="sGem"></span> · <span class="geo" id="sGeo"></span></span></div>
+    <p class="task" id="task"></p>
+    <p class="question" id="question"></p>
+    <div class="stage"><img id="img" alt=""><span class="tag" id="tag">View 1 · what the model saw</span></div>
+    <div class="row answers" id="answers">
+      <button id="yes">Yes, it's really there <span style="opacity:.5">(Y)</span></button>
+      <button id="no">No, it's a print or nothing <span style="opacity:.5">(N)</span></button>
+    </div>
+    <div id="after" hidden>
+      <p class="truth" id="truth"></p>
+      <div class="reveal">
+        <div class="card"><div class="k">You</div><div class="v" id="cYou"></div></div>
+        <div class="card"><div class="k">Gemini Robotics-ER · one photo</div><div class="v" id="cGem"></div><div class="q" id="cGemQ"></div></div>
+        <div class="card"><div class="k">Two-view geometry</div><div class="v" id="cGeo"></div><div class="t" id="cGeoT"></div></div>
+      </div>
+      <p class="flipnote">Flipping between the two photos, lined up on the black dots. Anything lying flat on the table holds still. Anything standing above it shifts.</p>
+      <div class="row next"><button id="flip">Stop flipping</button><button class="primary" id="next">Next <span style="opacity:.5">(Enter)</span></button></div>
+    </div>
+  </section>
+
+  <section id="summary" hidden>
+    <p class="eyebrow">Results</p>
+    <h2 id="sumHead"></h2>
+    <div class="sum-grid">
+      <div class="stat"><div class="k">You · one photo</div><div class="v" id="tYou"></div><div class="n" id="tYouN"></div></div>
+      <div class="stat"><div class="k">Gemini Robotics-ER · one photo</div><div class="v" id="tGem"></div><div class="n" id="tGemN"></div></div>
+      <div class="stat"><div class="k">Two-view geometry</div><div class="v" id="tGeo"></div><div class="n">no learned judge</div></div>
+    </div>
+    <div class="share" id="share"></div>
+    <div class="row" style="margin-top:14px"><button id="copy">Copy result</button><button class="primary" id="again">Play again</button></div>
+  </section>
+
+  <section class="about">
+    <p><b>What's going on.</b> One photo doesn't contain height. A good print of a mug and a mug can produce nearly the same pixels, so any judge that looks at one frame has to guess. A second photo from a slightly different spot does contain height: things above the table shift more than the table does. The <a href="https://github.com/parallaxmetrology/spatial-kernel">Spatial Kernel</a> measures that shift with plain computer vision: no training, same answer every time.</p>
+    <p><b>The fine print.</b> These are 27 scenes the model was asked about: one model version, one neutral prompt, one run. On the full set of 113 photo pairs the geometry check is right on 99 of 109 it could track. It struggles with clear glass and with very low objects, and a print taped onto a box fools it (the print really is raised). All of that is in the <a href="https://github.com/parallaxmetrology/spatial-kernel/blob/main/docs/known-issues.md">known issues</a>. Photos by the author, CC BY 4.0.</p>
+  </section>
+</main>
+<footer><div class="wrap">Parallax Metrology · <a href="https://www.parallaxmetrology.com">parallaxmetrology.com</a> · <a href="https://github.com/parallaxmetrology/spatial-kernel">code</a></div></footer>
+
+<script>
+const $ = id => document.getElementById(id);
+let data = [], deck = [], i = 0, score = {you: 0, gem: 0, geo: 0, gemFooled: 0, decoys: 0}, answered = false, flipTimer = null, flipOn = true, showing = 1, log = [];
+
+function shuffle(a) { for (let k = a.length - 1; k > 0; k--) { const j = Math.floor(Math.random() * (k + 1)); [a[k], a[j]] = [a[j], a[k]]; } return a; }
+function buildDeck() {
+  const fooled = shuffle(data.filter(d => !d.real && d.gemini_pass));
+  const otherFake = shuffle(data.filter(d => !d.real && !d.gemini_pass && !d.id.startsWith('bare')));
+  const real = shuffle(data.filter(d => d.real));
+  const empty = shuffle(data.filter(d => d.id.startsWith('bare')));
+  return shuffle([...fooled.slice(0, 4), ...real.slice(0, 3), ...otherFake.slice(0, 2), ...empty.slice(0, 1)]);
+}
+const art = n => /^[aeiou]/i.test(n) ? 'an' : 'a';
+const geoSaysReal = d => d.verdict === 'RAISED';
+const src = (d, v) => `scenes/${d.id}-${v}.jpg`;
+
+function preload(d) { [1, 2].forEach(v => { const im = new Image(); im.src = src(d, v); }); }
+function hud() {
+  $('round').textContent = `Round ${Math.min(i + 1, deck.length)} / ${deck.length}`;
+  $('sYou').textContent = `You ${score.you}`; $('sGem').textContent = `Gemini ${score.gem}`; $('sGeo').textContent = `Geometry ${score.geo}`;
+}
+function setView(v) { showing = v; const d = deck[i]; $('img').src = src(d, v); $('tag').textContent = v === 1 ? 'View 1 · what the model saw' : 'View 2 · 10 cm to the right'; }
+function stopFlip() { clearInterval(flipTimer); flipTimer = null; }
+function startFlip() { stopFlip(); flipTimer = setInterval(() => setView(showing === 1 ? 2 : 1), 420); }
+
+function show() {
+  const d = deck[i]; answered = false; stopFlip(); flipOn = true;
+  hud();
+  $('task').textContent = `Task given to the robot: place ${d.noun === 'cup' ? 'a cup' : art(d.noun) + ' ' + d.noun} on the table`;
+  $('question').innerHTML = `Is there a real <em>${d.noun}</em> on the table?`;
+  setView(1); $('img').alt = 'Top-down photo of a tabletop with two black dots';
+  $('answers').hidden = false; $('after').hidden = true;
+  if (deck[i + 1]) preload(deck[i + 1]);
+}
+function answer(sayReal) {
+  if (answered) return; answered = true;
+  const d = deck[i];
+  const you = sayReal === d.real, gem = d.gemini_pass === d.real, geo = geoSaysReal(d) === d.real;
+  score.you += you; score.gem += gem; score.geo += geo;
+  if (!d.real && !d.id.startsWith('bare')) { score.decoys++; if (d.gemini_pass) score.gemFooled++; }
+  log.push(you ? '🟩' : '🟥');
+  hud();
+  $('truth').innerHTML = `It was <b>${d.kind}</b>.`;
+  $('cYou').innerHTML = `${sayReal ? 'Real' : 'Not real'} <span class="${you ? 'ok' : 'no'}">${you ? '✓' : '✗'}</span>`;
+  $('cGem').innerHTML = `${d.gemini_pass ? 'PASS · real' : 'FAIL · not real'} <span class="${gem ? 'ok' : 'no'}">${gem ? '✓' : '✗'}</span>`;
+  const why = d.gemini_text.replace(/^VERDICT:\s*(PASS|FAIL)\s*/i, '').trim();
+  $('cGemQ').textContent = why ? `“${why}”` : '';
+  const geoLabel = d.verdict === 'RAISED' ? 'Raised · real' : d.verdict === 'FLAT' ? 'Flat · in the table' : 'Nothing there';
+  $('cGeo').innerHTML = `${geoLabel} <span class="${geo ? 'ok' : 'no'}">${geo ? '✓' : '✗'}</span>`;
+  $('cGeoT').textContent = d.rel_px === null ? 'No object found on the table.' : `Shifted ${Math.abs(d.rel_px).toFixed(1)} px more than the table (real objects here: usually 13–70; prints: 2–13; threshold 15).`;
+  $('answers').hidden = true; $('after').hidden = false; $('flip').textContent = 'Stop flipping';
+  startFlip();
+  $('next').focus({preventScroll: true});
+}
+function next() { if (!answered) return; i++; if (i >= deck.length) return finish(); show(); window.scrollTo({top: $('game').offsetTop - 10, behavior: 'smooth'}); }
+function finish() {
+  stopFlip(); $('game').hidden = true; $('summary').hidden = false;
+  const n = deck.length;
+  $('tYou').textContent = `${score.you} / ${n}`; $('tGem').textContent = `${score.gem} / ${n}`; $('tGeo').textContent = `${score.geo} / ${n}`;
+  $('tYouN').textContent = score.you > score.gem ? 'better than the model' : score.you === score.gem ? 'tied with the model' : 'the model beat you';
+  $('tGemN').textContent = `fooled by ${score.gemFooled} of ${score.decoys} prints`;
+  $('sumHead').textContent = score.you === n ? 'Perfect. One photo was enough for you.' : score.you > score.gem ? 'You beat the model from one photo.' : 'One photo is a hard place to judge from.';
+  const text = `Real or printed? ${score.you}/${n}\n${log.join('')}\nGemini Robotics-ER: ${score.gem}/${n} · two-view geometry: ${score.geo}/${n}\nparallaxmetrology.github.io/spatial-kernel`;
+  $('share').textContent = text; $('copy').onclick = () => navigator.clipboard?.writeText(text).then(() => { $('copy').textContent = 'Copied'; });
+  window.scrollTo({top: $('summary').offsetTop - 10, behavior: 'smooth'});
+}
+function start() {
+  deck = buildDeck(); i = 0; score = {you: 0, gem: 0, geo: 0, gemFooled: 0, decoys: 0}; log = [];
+  $('intro').hidden = true; $('summary').hidden = true; $('game').hidden = false; $('copy').textContent = 'Copy result';
+  deck.slice(0, 2).forEach(preload); show();
+}
+
+$('yes').onclick = () => answer(true); $('no').onclick = () => answer(false);
+$('next').onclick = next; $('again').onclick = start;
+$('flip').onclick = () => { flipOn = !flipOn; if (flipOn) { startFlip(); $('flip').textContent = 'Stop flipping'; } else { stopFlip(); setView(1); $('flip').textContent = 'Flip views'; } };
+document.addEventListener('keydown', e => {
+  if ($('game').hidden) return;
+  if (!answered && (e.key === 'y' || e.key === 'Y')) answer(true);
+  else if (!answered && (e.key === 'n' || e.key === 'N')) answer(false);
+  else if (answered && e.key === 'Enter') { e.preventDefault(); next(); }
+});
+fetch('game-data.json').then(r => r.json()).then(d => { data = d; $('start').disabled = false; }).catch(() => { $('start').textContent = 'Could not load scenes'; });
+$('start').disabled = true; $('start').onclick = start;
+</script>
+</body>
+</html>

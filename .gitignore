@@ -1,0 +1,15 @@
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.ruff_cache/
+dist/
+build/
+*.egg-info/
+.DS_Store
+.claude/
+benchmarks/_*/
+.env
+data/
+results/*/
+!results/recorded/

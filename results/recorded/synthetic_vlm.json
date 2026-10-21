@@ -1,0 +1,537 @@
+{
+  "n": 24,
+  "accuracy": {
+    "appearance": 0.8333333333333334,
+    "parallax": 1.0
+  },
+  "rows": [
+    {
+      "cls": "clean_success",
+      "gt": true,
+      "appearance": {
+        "pass": true,
+        "conf": 0.85,
+        "note": "in_region=True support=True",
+        "correct": true
+      },
+      "parallax": {
+        "pass": true,
+        "conf": 0.8841,
+        "note": "\u03a9=0.022 agree=1.00",
+        "correct": true
+      },
+      "vlm": {
+        "pass": true,
+        "conf": 0.75,
+        "note": "VERDICT: PASS The block is clearly positioned in the bottom-left quadrant of the workspace",
+        "correct": true
+      }
+    },
+    {
+      "cls": "clean_success",
+      "gt": true,
+      "appearance": {
+        "pass": true,
+        "conf": 0.85,
+        "note": "in_region=True support=True",
+        "correct": true
+      },
+      "parallax": {
+        "pass": true,
+        "conf": 0.8841,
+        "note": "\u03a9=0.022 agree=1.00",
+        "correct": true
+      },
+      "vlm": {
+        "pass": true,
+        "conf": 0.75,
+        "note": "VERDICT: PASS The dark block is located entirely within the bottom-left quadrant of the im",
+        "correct": true
+      }
+    },
+    {
+      "cls": "clean_success",
+      "gt": true,
+      "appearance": {
+        "pass": true,
+        "conf": 0.85,
+        "note": "in_region=True support=True",
+        "correct": true
+      },
+      "parallax": {
+        "pass": true,
+        "conf": 0.8841,
+        "note": "\u03a9=0.022 agree=1.00",
+        "correct": true
+      },
+      "vlm": {
+        "pass": true,
+        "conf": 0.75,
+        "note": "VERDICT: PASS The dark block is located in the bottom-left quadrant of the workspace.",
+        "correct": true
+      }
+    },
+    {
+      "cls": "clean_success",
+      "gt": true,
+      "appearance": {
+        "pass": true,
+        "conf": 0.85,
+        "note": "in_region=True support=True",
+        "correct": true
+      },
+      "parallax": {
+        "pass": true,
+        "conf": 0.8841,
+        "note": "\u03a9=0.022 agree=1.00",
+        "correct": true
+      },
+      "vlm": {
+        "pass": true,
+        "conf": 0.75,
+        "note": "VERDICT: PASS The block is clearly positioned in the bottom-left quadrant of the workspace",
+        "correct": true
+      }
+    },
+    {
+      "cls": "wrong_place",
+      "gt": false,
+      "appearance": {
+        "pass": false,
+        "conf": 0.7,
+        "note": "in_region=False support=False",
+        "correct": true
+      },
+      "parallax": {
+        "pass": false,
+        "conf": 0.0,
+        "note": "\u03a9=0.022 agree=0.00",
+        "correct": true
+      },
+      "vlm": {
+        "pass": false,
+        "conf": 0.75,
+        "note": "VERDICT: FAIL The block is located in the top-right quadrant instead of the bottom-left.",
+        "correct": true
+      }
+    },
+    {
+      "cls": "wrong_place",
+      "gt": false,
+      "appearance": {
+        "pass": false,
+        "conf": 0.7,
+        "note": "in_region=False support=False",
+        "correct": true
+      },
+      "parallax": {
+        "pass": false,
+        "conf": 0.0,
+        "note": "\u03a9=0.022 agree=0.00",
+        "correct": true
+      },
+      "vlm": {
+        "pass": false,
+        "conf": 0.75,
+        "note": "VERDICT: FAIL The block is in the top-right quadrant, not the bottom-left quadrant.",
+        "correct": true
+      }
+    },
+    {
+      "cls": "wrong_place",
+      "gt": false,
+      "appearance": {
+        "pass": false,
+        "conf": 0.7,
+        "note": "in_region=False support=False",
+        "correct": true
+      },
+      "parallax": {
+        "pass": false,
+        "conf": 0.0,
+        "note": "\u03a9=0.022 agree=0.00",
+        "correct": true
+      },
+      "vlm": {
+        "pass": false,
+        "conf": 0.75,
+        "note": "VERDICT: FAIL The block is located in the upper-right quadrant, not the bottom-left.",
+        "correct": true
+      }
+    },
+    {
+      "cls": "wrong_place",
+      "gt": false,
+      "appearance": {
+        "pass": false,
+        "conf": 0.7,
+        "note": "in_region=False support=False",
+        "correct": true
+      },
+      "parallax": {
+        "pass": false,
+        "conf": 0.0,
+        "note": "\u03a9=0.022 agree=0.00",
+        "correct": true
+      },
+      "vlm": {
+        "pass": false,
+        "conf": 0.75,
+        "note": "VERDICT: FAIL The block is located in the top-right quadrant, not the bottom-left.",
+        "correct": true
+      }
+    },
+    {
+      "cls": "clutter_success",
+      "gt": true,
+      "appearance": {
+        "pass": true,
+        "conf": 0.85,
+        "note": "in_region=True support=True",
+        "correct": true
+      },
+      "parallax": {
+        "pass": true,
+        "conf": 0.9924,
+        "note": "\u03a9=0.001 agree=1.00",
+        "correct": true
+      },
+      "vlm": {
+        "pass": true,
+        "conf": 0.75,
+        "note": "VERDICT: PASS The block is resting entirely within the bottom-left quadrant.",
+        "correct": true
+      }
+    },
+    {
+      "cls": "clutter_success",
+      "gt": true,
+      "appearance": {
+        "pass": true,
+        "conf": 0.85,
+        "note": "in_region=True support=True",
+        "correct": true
+      },
+      "parallax": {
+        "pass": true,
+        "conf": 0.9924,
+        "note": "\u03a9=0.001 agree=1.00",
+        "correct": true
+      },
+      "vlm": {
+        "pass": true,
+        "conf": 0.75,
+        "note": "VERDICT: PASS The block is clearly positioned within the bottom-left quadrant of the works",
+        "correct": true
+      }
+    },
+    {
+      "cls": "clutter_success",
+      "gt": true,
+      "appearance": {
+        "pass": true,
+        "conf": 0.85,
+        "note": "in_region=True support=True",
+        "correct": true
+      },
+      "parallax": {
+        "pass": true,
+        "conf": 0.9924,
+        "note": "\u03a9=0.001 agree=1.00",
+        "correct": true
+      },
+      "vlm": {
+        "pass": true,
+        "conf": 0.75,
+        "note": "VERDICT: PASS The block is clearly positioned in the bottom-left quadrant of the workspace",
+        "correct": true
+      }
+    },
+    {
+      "cls": "clutter_success",
+      "gt": true,
+      "appearance": {
+        "pass": true,
+        "conf": 0.85,
+        "note": "in_region=True support=True",
+        "correct": true
+      },
+      "parallax": {
+        "pass": true,
+        "conf": 0.9924,
+        "note": "\u03a9=0.001 agree=1.00",
+        "correct": true
+      },
+      "vlm": {
+        "pass": true,
+        "conf": 0.75,
+        "note": "VERDICT: PASS The block is clearly present and located entirely within the bottom-left qua",
+        "correct": true
+      }
+    },
+    {
+      "cls": "decoy",
+      "gt": false,
+      "appearance": {
+        "pass": true,
+        "conf": 0.85,
+        "note": "in_region=True support=True",
+        "correct": false
+      },
+      "parallax": {
+        "pass": false,
+        "conf": 0.0824,
+        "note": "\u03a9=0.325 agree=0.50",
+        "correct": true
+      },
+      "vlm": {
+        "pass": true,
+        "conf": 0.75,
+        "note": "VERDICT: PASS The block is entirely within the bottom-left quadrant of the image.",
+        "correct": false
+      }
+    },
+    {
+      "cls": "decoy",
+      "gt": false,
+      "appearance": {
+        "pass": true,
+        "conf": 0.85,
+        "note": "in_region=True support=True",
+        "correct": false
+      },
+      "parallax": {
+        "pass": false,
+        "conf": 0.0596,
+        "note": "\u03a9=0.383 agree=0.50",
+        "correct": true
+      },
+      "vlm": {
+        "pass": true,
+        "conf": 0.75,
+        "note": "VERDICT: PASS The block is entirely within the bottom-left quadrant of the workspace.",
+        "correct": false
+      }
+    },
+    {
+      "cls": "decoy",
+      "gt": false,
+      "appearance": {
+        "pass": true,
+        "conf": 0.85,
+        "note": "in_region=True support=True",
+        "correct": false
+      },
+      "parallax": {
+        "pass": false,
+        "conf": 0.0583,
+        "note": "\u03a9=0.387 agree=0.50",
+        "correct": true
+      },
+      "vlm": {
+        "pass": true,
+        "conf": 0.75,
+        "note": "VERDICT: PASS The block is entirely within the lower-left quadrant of the workspace.",
+        "correct": false
+      }
+    },
+    {
+      "cls": "decoy",
+      "gt": false,
+      "appearance": {
+        "pass": true,
+        "conf": 0.85,
+        "note": "in_region=True support=True",
+        "correct": false
+      },
+      "parallax": {
+        "pass": false,
+        "conf": 0.0711,
+        "note": "\u03a9=0.351 agree=0.50",
+        "correct": true
+      },
+      "vlm": {
+        "pass": true,
+        "conf": 0.75,
+        "note": "VERDICT: PASS The dark block is located entirely within the lower-left quarter of the imag",
+        "correct": false
+      }
+    },
+    {
+      "cls": "occluded_success",
+      "gt": true,
+      "appearance": {
+        "pass": true,
+        "conf": 0.85,
+        "note": "in_region=True support=True",
+        "correct": true
+      },
+      "parallax": {
+        "pass": true,
+        "conf": 0.9148,
+        "note": "\u03a9=0.016 agree=1.00",
+        "correct": true
+      },
+      "vlm": {
+        "pass": true,
+        "conf": 0.75,
+        "note": "VERDICT: PASS The block is clearly present and correctly positioned in the bottom-left qua",
+        "correct": true
+      }
+    },
+    {
+      "cls": "occluded_success",
+      "gt": true,
+      "appearance": {
+        "pass": true,
+        "conf": 0.85,
+        "note": "in_region=True support=True",
+        "correct": true
+      },
+      "parallax": {
+        "pass": true,
+        "conf": 0.9148,
+        "note": "\u03a9=0.016 agree=1.00",
+        "correct": true
+      },
+      "vlm": {
+        "pass": true,
+        "conf": 0.75,
+        "note": "VERDICT: PASS The dark block is located in the bottom-left quadrant of the workspace.",
+        "correct": true
+      }
+    },
+    {
+      "cls": "occluded_success",
+      "gt": true,
+      "appearance": {
+        "pass": true,
+        "conf": 0.85,
+        "note": "in_region=True support=True",
+        "correct": true
+      },
+      "parallax": {
+        "pass": true,
+        "conf": 0.9148,
+        "note": "\u03a9=0.016 agree=1.00",
+        "correct": true
+      },
+      "vlm": {
+        "pass": true,
+        "conf": 0.75,
+        "note": "VERDICT: PASS The block is positioned in the bottom-left quadrant of the image.",
+        "correct": true
+      }
+    },
+    {
+      "cls": "occluded_success",
+      "gt": true,
+      "appearance": {
+        "pass": true,
+        "conf": 0.85,
+        "note": "in_region=True support=True",
+        "correct": true
+      },
+      "parallax": {
+        "pass": true,
+        "conf": 0.9148,
+        "note": "\u03a9=0.016 agree=1.00",
+        "correct": true
+      },
+      "vlm": {
+        "pass": true,
+        "conf": 0.75,
+        "note": "VERDICT: PASS The block is positioned within the bottom-left quadrant of the workspace.",
+        "correct": true
+      }
+    },
+    {
+      "cls": "empty",
+      "gt": false,
+      "appearance": {
+        "pass": false,
+        "conf": 0.9,
+        "note": "no object segmented",
+        "correct": true
+      },
+      "parallax": {
+        "pass": false,
+        "conf": 0.0,
+        "note": "\u03a9=0.000 agree=0.00",
+        "correct": true
+      },
+      "vlm": {
+        "pass": false,
+        "conf": 0.75,
+        "note": "VERDICT: FAIL No block is present in the bottom-left quadrant or anywhere in the workspace",
+        "correct": true
+      }
+    },
+    {
+      "cls": "empty",
+      "gt": false,
+      "appearance": {
+        "pass": false,
+        "conf": 0.9,
+        "note": "no object segmented",
+        "correct": true
+      },
+      "parallax": {
+        "pass": false,
+        "conf": 0.0,
+        "note": "\u03a9=0.000 agree=0.00",
+        "correct": true
+      },
+      "vlm": {
+        "pass": false,
+        "conf": 0.75,
+        "note": "VERDICT: FAIL No block is present in the workspace.",
+        "correct": true
+      }
+    },
+    {
+      "cls": "empty",
+      "gt": false,
+      "appearance": {
+        "pass": false,
+        "conf": 0.9,
+        "note": "no object segmented",
+        "correct": true
+      },
+      "parallax": {
+        "pass": false,
+        "conf": 0.0,
+        "note": "\u03a9=0.000 agree=0.00",
+        "correct": true
+      },
+      "vlm": {
+        "pass": false,
+        "conf": 0.75,
+        "note": "VERDICT: FAIL No block is present in the workspace.",
+        "correct": true
+      }
+    },
+    {
+      "cls": "empty",
+      "gt": false,
+      "appearance": {
+        "pass": false,
+        "conf": 0.9,
+        "note": "no object segmented",
+        "correct": true
+      },
+      "parallax": {
+        "pass": false,
+        "conf": 0.0,
+        "note": "\u03a9=0.000 agree=0.00",
+        "correct": true
+      },
+      "vlm": {
+        "pass": false,
+        "conf": 0.75,
+        "note": "VERDICT: FAIL No block is present in the workspace.",
+        "correct": true
+      }
+    }
+  ]
+}

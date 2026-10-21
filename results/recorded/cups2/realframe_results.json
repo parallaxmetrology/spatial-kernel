@@ -1,0 +1,910 @@
+{
+  "threshold_px": 15.0,
+  "cap_px": 90.0,
+  "scenes": {
+    "bare table 01": {
+      "relative_parallax_px": null,
+      "expected": null,
+      "verdict": "no-object",
+      "correct": true,
+      "detect_fail": false,
+      "table_shift_px": -216.6
+    },
+    "bare table 02": {
+      "relative_parallax_px": null,
+      "expected": null,
+      "verdict": "no-object",
+      "correct": true,
+      "detect_fail": false,
+      "table_shift_px": -307.9
+    },
+    "bare table 03": {
+      "relative_parallax_px": null,
+      "expected": null,
+      "verdict": "no-object",
+      "correct": true,
+      "detect_fail": false,
+      "table_shift_px": -309.2
+    },
+    "bare table 04": {
+      "relative_parallax_px": null,
+      "expected": null,
+      "verdict": "no-object",
+      "correct": true,
+      "detect_fail": false,
+      "table_shift_px": -289.2
+    },
+    "bare table 05": {
+      "relative_parallax_px": null,
+      "expected": null,
+      "verdict": "no-object",
+      "correct": true,
+      "detect_fail": false,
+      "table_shift_px": 297.0
+    },
+    "bare table 06": {
+      "relative_parallax_px": null,
+      "expected": null,
+      "verdict": "no-object",
+      "correct": true,
+      "detect_fail": false,
+      "table_shift_px": 269.5
+    },
+    "clear glass 01": {
+      "relative_parallax_px": -60.1,
+      "expected": "raised",
+      "verdict": "RAISED",
+      "correct": true,
+      "detect_fail": false,
+      "table_shift_px": -221.5
+    },
+    "clear glass 02": {
+      "relative_parallax_px": -81.3,
+      "expected": "raised",
+      "verdict": "RAISED",
+      "correct": true,
+      "detect_fail": false,
+      "table_shift_px": -231.5
+    },
+    "clear glass 03": {
+      "relative_parallax_px": -93.5,
+      "expected": "raised",
+      "verdict": "detect-fail",
+      "correct": false,
+      "detect_fail": true,
+      "table_shift_px": -250.9
+    },
+    "clear glass 04": {
+      "relative_parallax_px": -76.5,
+      "expected": "raised",
+      "verdict": "RAISED",
+      "correct": true,
+      "detect_fail": false,
+      "table_shift_px": -252.8
+    },
+    "clear glass 05": {
+      "relative_parallax_px": -116.0,
+      "expected": "raised",
+      "verdict": "detect-fail",
+      "correct": false,
+      "detect_fail": true,
+      "table_shift_px": -251.9
+    },
+    "clear glass 06": {
+      "relative_parallax_px": -123.7,
+      "expected": "raised",
+      "verdict": "detect-fail",
+      "correct": false,
+      "detect_fail": true,
+      "table_shift_px": -261.5
+    },
+    "cut out mug 01": {
+      "relative_parallax_px": -9.7,
+      "expected": "flat",
+      "verdict": "FLAT",
+      "correct": true,
+      "detect_fail": false,
+      "table_shift_px": -222.1
+    },
+    "cut out mug 02": {
+      "relative_parallax_px": 2.1,
+      "expected": "flat",
+      "verdict": "FLAT",
+      "correct": true,
+      "detect_fail": false,
+      "table_shift_px": -239.3
+    },
+    "cut out mug 03": {
+      "relative_parallax_px": -2.9,
+      "expected": "flat",
+      "verdict": "FLAT",
+      "correct": true,
+      "detect_fail": false,
+      "table_shift_px": -248.2
+    },
+    "cut out mug 04": {
+      "relative_parallax_px": -2.7,
+      "expected": "flat",
+      "verdict": "FLAT",
+      "correct": true,
+      "detect_fail": false,
+      "table_shift_px": -263.6
+    },
+    "cut out mug 05": {
+      "relative_parallax_px": 6.1,
+      "expected": "flat",
+      "verdict": "FLAT",
+      "correct": true,
+      "detect_fail": false,
+      "table_shift_px": -294.0
+    },
+    "cut out mug on the box 01": {
+      "relative_parallax_px": -39.7,
+      "expected": "raised",
+      "verdict": "RAISED",
+      "correct": true,
+      "detect_fail": false,
+      "table_shift_px": -295.9
+    },
+    "cut out mug on the box 02": {
+      "relative_parallax_px": -36.4,
+      "expected": "raised",
+      "verdict": "RAISED",
+      "correct": true,
+      "detect_fail": false,
+      "table_shift_px": -273.2
+    },
+    "cut out mug on the box 03": {
+      "relative_parallax_px": -32.4,
+      "expected": "raised",
+      "verdict": "RAISED",
+      "correct": true,
+      "detect_fail": false,
+      "table_shift_px": -259.7
+    },
+    "cut out mug on the box 04": {
+      "relative_parallax_px": -53.6,
+      "expected": "raised",
+      "verdict": "RAISED",
+      "correct": true,
+      "detect_fail": false,
+      "table_shift_px": -302.8
+    },
+    "cut out mug on the box 05": {
+      "relative_parallax_px": -44.4,
+      "expected": "raised",
+      "verdict": "RAISED",
+      "correct": true,
+      "detect_fail": false,
+      "table_shift_px": -269.7
+    },
+    "cut out mug on the box 06": {
+      "relative_parallax_px": -41.2,
+      "expected": "raised",
+      "verdict": "RAISED",
+      "correct": true,
+      "detect_fail": false,
+      "table_shift_px": -274.8
+    },
+    "cut out paper cup 01": {
+      "relative_parallax_px": -15.4,
+      "expected": "flat",
+      "verdict": "RAISED",
+      "correct": false,
+      "detect_fail": false,
+      "table_shift_px": -258.4
+    },
+    "cut out paper cup 02": {
+      "relative_parallax_px": 36.2,
+      "expected": "flat",
+      "verdict": "RAISED",
+      "correct": false,
+      "detect_fail": false,
+      "table_shift_px": -255.5
+    },
+    "cut out paper cup 03": {
+      "relative_parallax_px": -2.6,
+      "expected": "flat",
+      "verdict": "FLAT",
+      "correct": true,
+      "detect_fail": false,
+      "table_shift_px": -252.2
+    },
+    "cut out paper cup 04": {
+      "relative_parallax_px": -3.7,
+      "expected": "flat",
+      "verdict": "FLAT",
+      "correct": true,
+      "detect_fail": false,
+      "table_shift_px": -300.4
+    },
+    "cut out paper cup 05": {
+      "relative_parallax_px": 0.5,
+      "expected": "flat",
+      "verdict": "FLAT",
+      "correct": true,
+      "detect_fail": false,
+      "table_shift_px": -276.3
+    },
+    "cut out paper cup 06": {
+      "relative_parallax_px": -1.3,
+      "expected": "flat",
+      "verdict": "FLAT",
+      "correct": true,
+      "detect_fail": false,
+      "table_shift_px": -270.1
+    },
+    "cut out scotch roll 01": {
+      "relative_parallax_px": -9.8,
+      "expected": "flat",
+      "verdict": "FLAT",
+      "correct": true,
+      "detect_fail": false,
+      "table_shift_px": -228.6
+    },
+    "cut out scotch roll 02": {
+      "relative_parallax_px": -8.5,
+      "expected": "flat",
+      "verdict": "FLAT",
+      "correct": true,
+      "detect_fail": false,
+      "table_shift_px": -340.7
+    },
+    "cut out scotch roll 03": {
+      "relative_parallax_px": -8.6,
+      "expected": "flat",
+      "verdict": "FLAT",
+      "correct": true,
+      "detect_fail": false,
+      "table_shift_px": -278.3
+    },
+    "cut out scotch roll 04": {
+      "relative_parallax_px": 5.0,
+      "expected": "flat",
+      "verdict": "FLAT",
+      "correct": true,
+      "detect_fail": false,
+      "table_shift_px": -287.3
+    },
+    "cut out scotch roll 05": {
+      "relative_parallax_px": -8.1,
+      "expected": "flat",
+      "verdict": "FLAT",
+      "correct": true,
+      "detect_fail": false,
+      "table_shift_px": -290.5
+    },
+    "cut out scotch roll 06": {
+      "relative_parallax_px": -10.5,
+      "expected": "flat",
+      "verdict": "FLAT",
+      "correct": true,
+      "detect_fail": false,
+      "table_shift_px": -271.0
+    },
+    "flat green l 01": {
+      "relative_parallax_px": -6.9,
+      "expected": "flat",
+      "verdict": "FLAT",
+      "correct": true,
+      "detect_fail": false,
+      "table_shift_px": -274.8
+    },
+    "flat green l 02": {
+      "relative_parallax_px": -2.1,
+      "expected": "flat",
+      "verdict": "FLAT",
+      "correct": true,
+      "detect_fail": false,
+      "table_shift_px": -316.7
+    },
+    "flat green l 03": {
+      "relative_parallax_px": -5.2,
+      "expected": "flat",
+      "verdict": "FLAT",
+      "correct": true,
+      "detect_fail": false,
+      "table_shift_px": -292.2
+    },
+    "flat green l 04": {
+      "relative_parallax_px": -6.3,
+      "expected": "flat",
+      "verdict": "FLAT",
+      "correct": true,
+      "detect_fail": false,
+      "table_shift_px": -321.4
+    },
+    "flat green l 05": {
+      "relative_parallax_px": -6.8,
+      "expected": "flat",
+      "verdict": "FLAT",
+      "correct": true,
+      "detect_fail": false,
+      "table_shift_px": -274.7
+    },
+    "flat green l 06": {
+      "relative_parallax_px": -9.6,
+      "expected": "flat",
+      "verdict": "FLAT",
+      "correct": true,
+      "detect_fail": false,
+      "table_shift_px": -266.0
+    },
+    "full page mug 01": {
+      "relative_parallax_px": -3.6,
+      "expected": "flat",
+      "verdict": "FLAT",
+      "correct": true,
+      "detect_fail": false,
+      "table_shift_px": -226.5
+    },
+    "full page mug 02": {
+      "relative_parallax_px": 4.7,
+      "expected": "flat",
+      "verdict": "FLAT",
+      "correct": true,
+      "detect_fail": false,
+      "table_shift_px": -280.3
+    },
+    "full page mug 03": {
+      "relative_parallax_px": -4.6,
+      "expected": "flat",
+      "verdict": "FLAT",
+      "correct": true,
+      "detect_fail": false,
+      "table_shift_px": -294.8
+    },
+    "full page mug 04": {
+      "relative_parallax_px": -14.2,
+      "expected": "flat",
+      "verdict": "FLAT",
+      "correct": true,
+      "detect_fail": false,
+      "table_shift_px": -263.3
+    },
+    "full page mug 05": {
+      "relative_parallax_px": -7.1,
+      "expected": "flat",
+      "verdict": "FLAT",
+      "correct": true,
+      "detect_fail": false,
+      "table_shift_px": -270.7
+    },
+    "full page mug 06": {
+      "relative_parallax_px": -9.3,
+      "expected": "flat",
+      "verdict": "FLAT",
+      "correct": true,
+      "detect_fail": false,
+      "table_shift_px": -256.5
+    },
+    "full page paper cup 01": {
+      "relative_parallax_px": 5.6,
+      "expected": "flat",
+      "verdict": "FLAT",
+      "correct": true,
+      "detect_fail": false,
+      "table_shift_px": -289.0
+    },
+    "full page paper cup 02": {
+      "relative_parallax_px": -4.0,
+      "expected": "flat",
+      "verdict": "FLAT",
+      "correct": true,
+      "detect_fail": false,
+      "table_shift_px": -372.5
+    },
+    "full page paper cup 03": {
+      "relative_parallax_px": -6.0,
+      "expected": "flat",
+      "verdict": "FLAT",
+      "correct": true,
+      "detect_fail": false,
+      "table_shift_px": -266.0
+    },
+    "full page paper cup 04": {
+      "relative_parallax_px": 9.7,
+      "expected": "flat",
+      "verdict": "FLAT",
+      "correct": true,
+      "detect_fail": false,
+      "table_shift_px": -259.3
+    },
+    "full page paper cup 05": {
+      "relative_parallax_px": -11.3,
+      "expected": "flat",
+      "verdict": "FLAT",
+      "correct": true,
+      "detect_fail": false,
+      "table_shift_px": -324.7
+    },
+    "full page paper cup 06": {
+      "relative_parallax_px": -10.0,
+      "expected": "flat",
+      "verdict": "FLAT",
+      "correct": true,
+      "detect_fail": false,
+      "table_shift_px": -302.7
+    },
+    "full page scotch roll 01": {
+      "relative_parallax_px": -12.5,
+      "expected": "flat",
+      "verdict": "FLAT",
+      "correct": true,
+      "detect_fail": false,
+      "table_shift_px": -230.8
+    },
+    "full page scotch roll 02": {
+      "relative_parallax_px": 1.2,
+      "expected": "flat",
+      "verdict": "FLAT",
+      "correct": true,
+      "detect_fail": false,
+      "table_shift_px": -268.9
+    },
+    "full page scotch roll 03": {
+      "relative_parallax_px": 5.1,
+      "expected": "flat",
+      "verdict": "FLAT",
+      "correct": true,
+      "detect_fail": false,
+      "table_shift_px": -293.8
+    },
+    "full page scotch roll 04": {
+      "relative_parallax_px": -12.2,
+      "expected": "flat",
+      "verdict": "FLAT",
+      "correct": true,
+      "detect_fail": false,
+      "table_shift_px": -347.9
+    },
+    "full page scotch roll 05": {
+      "relative_parallax_px": -10.8,
+      "expected": "flat",
+      "verdict": "FLAT",
+      "correct": true,
+      "detect_fail": false,
+      "table_shift_px": -275.1
+    },
+    "full page scotch roll 06": {
+      "relative_parallax_px": 8.1,
+      "expected": "flat",
+      "verdict": "FLAT",
+      "correct": true,
+      "detect_fail": false,
+      "table_shift_px": -189.6
+    },
+    "paper cup 01": {
+      "relative_parallax_px": -78.7,
+      "expected": "raised",
+      "verdict": "RAISED",
+      "correct": true,
+      "detect_fail": false,
+      "table_shift_px": -245.1
+    },
+    "paper cup 02": {
+      "relative_parallax_px": -67.1,
+      "expected": "raised",
+      "verdict": "RAISED",
+      "correct": true,
+      "detect_fail": false,
+      "table_shift_px": -238.9
+    },
+    "paper cup 03": {
+      "relative_parallax_px": -58.3,
+      "expected": "raised",
+      "verdict": "RAISED",
+      "correct": true,
+      "detect_fail": false,
+      "table_shift_px": -271.6
+    },
+    "paper cup 04": {
+      "relative_parallax_px": -61.9,
+      "expected": "raised",
+      "verdict": "RAISED",
+      "correct": true,
+      "detect_fail": false,
+      "table_shift_px": -216.1
+    },
+    "paper cup 05": {
+      "relative_parallax_px": -56.9,
+      "expected": "raised",
+      "verdict": "RAISED",
+      "correct": true,
+      "detect_fail": false,
+      "table_shift_px": -205.5
+    },
+    "paper cup 06": {
+      "relative_parallax_px": -78.1,
+      "expected": "raised",
+      "verdict": "RAISED",
+      "correct": true,
+      "detect_fail": false,
+      "table_shift_px": -297.9
+    },
+    "real mug 01": {
+      "relative_parallax_px": -34.7,
+      "expected": "raised",
+      "verdict": "RAISED",
+      "correct": true,
+      "detect_fail": false,
+      "table_shift_px": -191.1
+    },
+    "real mug 02": {
+      "relative_parallax_px": -42.0,
+      "expected": "raised",
+      "verdict": "RAISED",
+      "correct": true,
+      "detect_fail": false,
+      "table_shift_px": -225.7
+    },
+    "real mug 03": {
+      "relative_parallax_px": -47.0,
+      "expected": "raised",
+      "verdict": "RAISED",
+      "correct": true,
+      "detect_fail": false,
+      "table_shift_px": -238.9
+    },
+    "real mug 04": {
+      "relative_parallax_px": -39.0,
+      "expected": "raised",
+      "verdict": "RAISED",
+      "correct": true,
+      "detect_fail": false,
+      "table_shift_px": -198.5
+    },
+    "real mug 05": {
+      "relative_parallax_px": -48.4,
+      "expected": "raised",
+      "verdict": "RAISED",
+      "correct": true,
+      "detect_fail": false,
+      "table_shift_px": -247.4
+    },
+    "real mug 06": {
+      "relative_parallax_px": -47.0,
+      "expected": "raised",
+      "verdict": "RAISED",
+      "correct": true,
+      "detect_fail": false,
+      "table_shift_px": -205.4
+    },
+    "real mug right 01": {
+      "relative_parallax_px": -48.6,
+      "expected": "raised",
+      "verdict": "RAISED",
+      "correct": true,
+      "detect_fail": false,
+      "table_shift_px": -230.6
+    },
+    "real mug right 02": {
+      "relative_parallax_px": -35.7,
+      "expected": "raised",
+      "verdict": "RAISED",
+      "correct": true,
+      "detect_fail": false,
+      "table_shift_px": -215.0
+    },
+    "real mug right 03": {
+      "relative_parallax_px": -59.1,
+      "expected": "raised",
+      "verdict": "RAISED",
+      "correct": true,
+      "detect_fail": false,
+      "table_shift_px": -276.6
+    },
+    "real mug right 04": {
+      "relative_parallax_px": -54.5,
+      "expected": "raised",
+      "verdict": "RAISED",
+      "correct": true,
+      "detect_fail": false,
+      "table_shift_px": -243.9
+    },
+    "real mug right 05": {
+      "relative_parallax_px": -40.4,
+      "expected": "raised",
+      "verdict": "RAISED",
+      "correct": true,
+      "detect_fail": false,
+      "table_shift_px": -225.5
+    },
+    "real mug right 06": {
+      "relative_parallax_px": -49.5,
+      "expected": "raised",
+      "verdict": "RAISED",
+      "correct": true,
+      "detect_fail": false,
+      "table_shift_px": -262.7
+    },
+    "scotch box 01": {
+      "relative_parallax_px": -14.9,
+      "expected": "raised",
+      "verdict": "FLAT",
+      "correct": false,
+      "detect_fail": false,
+      "table_shift_px": -227.2
+    },
+    "scotch box 02": {
+      "relative_parallax_px": -22.1,
+      "expected": "raised",
+      "verdict": "RAISED",
+      "correct": true,
+      "detect_fail": false,
+      "table_shift_px": -329.6
+    },
+    "scotch box 03": {
+      "relative_parallax_px": -10.2,
+      "expected": "raised",
+      "verdict": "FLAT",
+      "correct": false,
+      "detect_fail": false,
+      "table_shift_px": -242.4
+    },
+    "scotch box 04": {
+      "relative_parallax_px": -30.6,
+      "expected": "raised",
+      "verdict": "RAISED",
+      "correct": true,
+      "detect_fail": false,
+      "table_shift_px": -377.7
+    },
+    "scotch box 05": {
+      "relative_parallax_px": -33.0,
+      "expected": "raised",
+      "verdict": "RAISED",
+      "correct": true,
+      "detect_fail": false,
+      "table_shift_px": -363.9
+    },
+    "scotch box 06": {
+      "relative_parallax_px": 1.1,
+      "expected": "raised",
+      "verdict": "FLAT",
+      "correct": false,
+      "detect_fail": false,
+      "table_shift_px": -241.5
+    },
+    "scotch box fake 3d 01": {
+      "relative_parallax_px": -0.8,
+      "expected": "flat",
+      "verdict": "FLAT",
+      "correct": true,
+      "detect_fail": false,
+      "table_shift_px": -251.5
+    },
+    "scotch box fake 3d 02": {
+      "relative_parallax_px": -3.7,
+      "expected": "flat",
+      "verdict": "FLAT",
+      "correct": true,
+      "detect_fail": false,
+      "table_shift_px": -256.9
+    },
+    "scotch box fake 3d 03": {
+      "relative_parallax_px": -5.0,
+      "expected": "flat",
+      "verdict": "FLAT",
+      "correct": true,
+      "detect_fail": false,
+      "table_shift_px": -308.6
+    },
+    "scotch box fake 3d 04": {
+      "relative_parallax_px": -4.3,
+      "expected": "flat",
+      "verdict": "FLAT",
+      "correct": true,
+      "detect_fail": false,
+      "table_shift_px": -338.4
+    },
+    "scotch box fake 3d 05": {
+      "relative_parallax_px": 5.6,
+      "expected": "flat",
+      "verdict": "FLAT",
+      "correct": true,
+      "detect_fail": false,
+      "table_shift_px": -287.7
+    },
+    "scotch box fake 3d 06": {
+      "relative_parallax_px": -20.5,
+      "expected": "flat",
+      "verdict": "RAISED",
+      "correct": false,
+      "detect_fail": false,
+      "table_shift_px": -327.0
+    },
+    "scotch box flat 01": {
+      "relative_parallax_px": -12.3,
+      "expected": "flat",
+      "verdict": "FLAT",
+      "correct": true,
+      "detect_fail": false,
+      "table_shift_px": -238.2
+    },
+    "scotch box flat 02": {
+      "relative_parallax_px": -11.7,
+      "expected": "flat",
+      "verdict": "FLAT",
+      "correct": true,
+      "detect_fail": false,
+      "table_shift_px": -337.9
+    },
+    "scotch box flat 03": {
+      "relative_parallax_px": -5.4,
+      "expected": "flat",
+      "verdict": "FLAT",
+      "correct": true,
+      "detect_fail": false,
+      "table_shift_px": -285.2
+    },
+    "scotch box flat 04": {
+      "relative_parallax_px": -4.1,
+      "expected": "flat",
+      "verdict": "FLAT",
+      "correct": true,
+      "detect_fail": false,
+      "table_shift_px": -273.2
+    },
+    "scotch box flat 05": {
+      "relative_parallax_px": 2.7,
+      "expected": "flat",
+      "verdict": "FLAT",
+      "correct": true,
+      "detect_fail": false,
+      "table_shift_px": -271.7
+    },
+    "scotch box flat 06": {
+      "relative_parallax_px": -19.9,
+      "expected": "flat",
+      "verdict": "RAISED",
+      "correct": false,
+      "detect_fail": false,
+      "table_shift_px": -294.8
+    },
+    "scotch box flat on the box 01": {
+      "relative_parallax_px": -25.2,
+      "expected": "raised",
+      "verdict": "RAISED",
+      "correct": true,
+      "detect_fail": false,
+      "table_shift_px": -263.5
+    },
+    "scotch box flat on the box 02": {
+      "relative_parallax_px": -29.8,
+      "expected": "raised",
+      "verdict": "RAISED",
+      "correct": true,
+      "detect_fail": false,
+      "table_shift_px": -242.5
+    },
+    "scotch box flat on the box 03": {
+      "relative_parallax_px": -28.3,
+      "expected": "raised",
+      "verdict": "RAISED",
+      "correct": true,
+      "detect_fail": false,
+      "table_shift_px": -216.1
+    },
+    "scotch box flat on the box 04": {
+      "relative_parallax_px": -29.5,
+      "expected": "raised",
+      "verdict": "RAISED",
+      "correct": true,
+      "detect_fail": false,
+      "table_shift_px": -275.2
+    },
+    "scotch box flat on the box 05": {
+      "relative_parallax_px": -15.2,
+      "expected": "raised",
+      "verdict": "RAISED",
+      "correct": true,
+      "detect_fail": false,
+      "table_shift_px": -244.2
+    },
+    "scotch box flat on the box 06": {
+      "relative_parallax_px": -27.9,
+      "expected": "raised",
+      "verdict": "RAISED",
+      "correct": true,
+      "detect_fail": false,
+      "table_shift_px": -325.2
+    },
+    "scotch box side 01": {
+      "relative_parallax_px": -31.7,
+      "expected": "raised",
+      "verdict": "RAISED",
+      "correct": true,
+      "detect_fail": false,
+      "table_shift_px": -214.5
+    },
+    "scotch box side 02": {
+      "relative_parallax_px": -31.1,
+      "expected": "raised",
+      "verdict": "RAISED",
+      "correct": true,
+      "detect_fail": false,
+      "table_shift_px": -303.2
+    },
+    "scotch box side 03": {
+      "relative_parallax_px": -18.0,
+      "expected": "raised",
+      "verdict": "RAISED",
+      "correct": true,
+      "detect_fail": false,
+      "table_shift_px": -220.6
+    },
+    "scotch box side 04": {
+      "relative_parallax_px": -13.5,
+      "expected": "raised",
+      "verdict": "FLAT",
+      "correct": false,
+      "detect_fail": false,
+      "table_shift_px": -179.6
+    },
+    "scotch box side 05": {
+      "relative_parallax_px": -29.9,
+      "expected": "raised",
+      "verdict": "RAISED",
+      "correct": true,
+      "detect_fail": false,
+      "table_shift_px": -251.0
+    },
+    "scotch box side 06": {
+      "relative_parallax_px": -33.3,
+      "expected": "raised",
+      "verdict": "RAISED",
+      "correct": true,
+      "detect_fail": false,
+      "table_shift_px": -289.5
+    },
+    "scotch roll 01": {
+      "relative_parallax_px": -24.2,
+      "expected": "raised",
+      "verdict": "RAISED",
+      "correct": true,
+      "detect_fail": false,
+      "table_shift_px": -248.6
+    },
+    "scotch roll 02": {
+      "relative_parallax_px": -3.6,
+      "expected": "raised",
+      "verdict": "FLAT",
+      "correct": false,
+      "detect_fail": false,
+      "table_shift_px": -321.6
+    },
+    "scotch roll 03": {
+      "relative_parallax_px": -20.5,
+      "expected": "raised",
+      "verdict": "RAISED",
+      "correct": true,
+      "detect_fail": false,
+      "table_shift_px": -315.8
+    },
+    "scotch roll 04": {
+      "relative_parallax_px": -37.6,
+      "expected": "raised",
+      "verdict": "RAISED",
+      "correct": true,
+      "detect_fail": false,
+      "table_shift_px": -371.2
+    },
+    "scotch roll 05": {
+      "relative_parallax_px": -10.1,
+      "expected": "raised",
+      "verdict": "FLAT",
+      "correct": false,
+      "detect_fail": false,
+      "table_shift_px": -275.7
+    },
+    "scotch roll 06": {
+      "relative_parallax_px": 167.8,
+      "expected": "raised",
+      "verdict": "detect-fail",
+      "correct": false,
+      "detect_fail": true,
+      "table_shift_px": -324.3
+    }
+  }
+}

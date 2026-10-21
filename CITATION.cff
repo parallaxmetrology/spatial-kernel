@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "If you use the Spatial Kernel in research, please cite it as below."
+title: "Spatial Kernel: deterministic two-view verification of robot task outcomes"
+type: software
+authors:
+  - family-names: Parrish
+    given-names: Russell
+    orcid: https://orcid.org/0009-0008-9781-7995
+version: "0.1.0"
+date-released: 2026-10-21
+license: MIT
+url: https://www.parallaxmetrology.com/spatial_pm.html
+repository-code: https://github.com/parallaxmetrology/spatial-kernel
+keywords: [robotics, embodied AI, success detection, VLM evaluation, stereo parallax, verification]
+abstract: >
+  A deterministic check of robot task outcomes: task-region geometry plus a
+  two-view parallax test on ordinary photos that separates real 3D objects from
+  flat printed decoys. On real phone photos, Gemini Robotics-ER passed 10 of 18
+  flat decoys as real objects; the two-view check caught all 10.

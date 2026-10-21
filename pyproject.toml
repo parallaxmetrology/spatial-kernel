@@ -1,0 +1,55 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "spatial-kernel"
+version = "0.1.0"
+description = "Is it really there? A deterministic check of robot task outcomes: task-region geometry plus a two-view parallax test that separates real 3D objects from flat printed decoys. No learned judge."
+readme = "README.md"
+license = "MIT"
+license-files = ["LICENSE"]
+authors = [{ name = "Russell Parrish", email = "russellgparrish@gmail.com" }]
+requires-python = ">=3.9"
+keywords = ["robotics", "embodied AI", "VLM", "success detection", "verification", "stereo", "parallax", "evaluation"]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Intended Audience :: Science/Research",
+  "Topic :: Scientific/Engineering :: Artificial Intelligence",
+  "Topic :: Scientific/Engineering :: Image Processing",
+  "Programming Language :: Python :: 3",
+]
+dependencies = ["numpy>=1.23", "opencv-python-headless>=4.8", "pillow>=9.5", "scipy>=1.9", "scikit-image>=0.20"]
+
+[project.optional-dependencies]
+gemini = ["google-genai>=1.0"]
+dev = ["pytest>=7", "ruff"]
+
+[project.scripts]
+spatial-kernel = "spatial_kernel.cli:main"
+
+[project.urls]
+Homepage = "https://www.parallaxmetrology.com/spatial_pm.html"
+Source = "https://github.com/parallaxmetrology/spatial-kernel"
+Issues = "https://github.com/parallaxmetrology/spatial-kernel/issues"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/spatial_kernel"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src", "."]
+
+[tool.ruff]
+line-length = 140
+
+[tool.ruff.lint]
+select = ["E", "F", "W"]
+
+[tool.ruff.lint.per-file-ignores]
+# research code kept as written; style-only rules relaxed
+"benchmark/*" = ["E401", "E402", "E501", "E701", "E702", "E731", "E741", "F401"]
+"demo_confound_and_parallax.py" = ["E401", "E501", "E701", "E702", "E731", "E741", "F401"]
+"tests/test_isolation_and_parallax.py" = ["E702"]
+"src/spatial_kernel/visualize.py" = ["F401"]
+"src/spatial_kernel/twoview.py" = ["E702"]

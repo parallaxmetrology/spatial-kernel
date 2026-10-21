@@ -1,0 +1,621 @@
+{
+  "n": 36,
+  "accuracy": {
+    "appearance": 0.8333333333333334,
+    "parallax": 1.0
+  },
+  "rows": [
+    {
+      "cls": "clean_success",
+      "gt": true,
+      "appearance": {
+        "pass": true,
+        "conf": 0.85,
+        "note": "in_region=True support=True",
+        "correct": true
+      },
+      "parallax": {
+        "pass": true,
+        "conf": 0.8841,
+        "note": "\u03a9=0.022 agree=1.00",
+        "correct": true
+      },
+      "vlm": null
+    },
+    {
+      "cls": "clean_success",
+      "gt": true,
+      "appearance": {
+        "pass": true,
+        "conf": 0.85,
+        "note": "in_region=True support=True",
+        "correct": true
+      },
+      "parallax": {
+        "pass": true,
+        "conf": 0.8841,
+        "note": "\u03a9=0.022 agree=1.00",
+        "correct": true
+      },
+      "vlm": null
+    },
+    {
+      "cls": "clean_success",
+      "gt": true,
+      "appearance": {
+        "pass": true,
+        "conf": 0.85,
+        "note": "in_region=True support=True",
+        "correct": true
+      },
+      "parallax": {
+        "pass": true,
+        "conf": 0.8841,
+        "note": "\u03a9=0.022 agree=1.00",
+        "correct": true
+      },
+      "vlm": null
+    },
+    {
+      "cls": "clean_success",
+      "gt": true,
+      "appearance": {
+        "pass": true,
+        "conf": 0.85,
+        "note": "in_region=True support=True",
+        "correct": true
+      },
+      "parallax": {
+        "pass": true,
+        "conf": 0.8841,
+        "note": "\u03a9=0.022 agree=1.00",
+        "correct": true
+      },
+      "vlm": null
+    },
+    {
+      "cls": "clean_success",
+      "gt": true,
+      "appearance": {
+        "pass": true,
+        "conf": 0.85,
+        "note": "in_region=True support=True",
+        "correct": true
+      },
+      "parallax": {
+        "pass": true,
+        "conf": 0.8841,
+        "note": "\u03a9=0.022 agree=1.00",
+        "correct": true
+      },
+      "vlm": null
+    },
+    {
+      "cls": "clean_success",
+      "gt": true,
+      "appearance": {
+        "pass": true,
+        "conf": 0.85,
+        "note": "in_region=True support=True",
+        "correct": true
+      },
+      "parallax": {
+        "pass": true,
+        "conf": 0.8841,
+        "note": "\u03a9=0.022 agree=1.00",
+        "correct": true
+      },
+      "vlm": null
+    },
+    {
+      "cls": "wrong_place",
+      "gt": false,
+      "appearance": {
+        "pass": false,
+        "conf": 0.7,
+        "note": "in_region=False support=False",
+        "correct": true
+      },
+      "parallax": {
+        "pass": false,
+        "conf": 0.0,
+        "note": "\u03a9=0.022 agree=0.00",
+        "correct": true
+      },
+      "vlm": null
+    },
+    {
+      "cls": "wrong_place",
+      "gt": false,
+      "appearance": {
+        "pass": false,
+        "conf": 0.7,
+        "note": "in_region=False support=False",
+        "correct": true
+      },
+      "parallax": {
+        "pass": false,
+        "conf": 0.0,
+        "note": "\u03a9=0.022 agree=0.00",
+        "correct": true
+      },
+      "vlm": null
+    },
+    {
+      "cls": "wrong_place",
+      "gt": false,
+      "appearance": {
+        "pass": false,
+        "conf": 0.7,
+        "note": "in_region=False support=False",
+        "correct": true
+      },
+      "parallax": {
+        "pass": false,
+        "conf": 0.0,
+        "note": "\u03a9=0.022 agree=0.00",
+        "correct": true
+      },
+      "vlm": null
+    },
+    {
+      "cls": "wrong_place",
+      "gt": false,
+      "appearance": {
+        "pass": false,
+        "conf": 0.7,
+        "note": "in_region=False support=False",
+        "correct": true
+      },
+      "parallax": {
+        "pass": false,
+        "conf": 0.0,
+        "note": "\u03a9=0.022 agree=0.00",
+        "correct": true
+      },
+      "vlm": null
+    },
+    {
+      "cls": "wrong_place",
+      "gt": false,
+      "appearance": {
+        "pass": false,
+        "conf": 0.7,
+        "note": "in_region=False support=False",
+        "correct": true
+      },
+      "parallax": {
+        "pass": false,
+        "conf": 0.0,
+        "note": "\u03a9=0.022 agree=0.00",
+        "correct": true
+      },
+      "vlm": null
+    },
+    {
+      "cls": "wrong_place",
+      "gt": false,
+      "appearance": {
+        "pass": false,
+        "conf": 0.7,
+        "note": "in_region=False support=False",
+        "correct": true
+      },
+      "parallax": {
+        "pass": false,
+        "conf": 0.0,
+        "note": "\u03a9=0.022 agree=0.00",
+        "correct": true
+      },
+      "vlm": null
+    },
+    {
+      "cls": "clutter_success",
+      "gt": true,
+      "appearance": {
+        "pass": true,
+        "conf": 0.85,
+        "note": "in_region=True support=True",
+        "correct": true
+      },
+      "parallax": {
+        "pass": true,
+        "conf": 0.9924,
+        "note": "\u03a9=0.001 agree=1.00",
+        "correct": true
+      },
+      "vlm": null
+    },
+    {
+      "cls": "clutter_success",
+      "gt": true,
+      "appearance": {
+        "pass": true,
+        "conf": 0.85,
+        "note": "in_region=True support=True",
+        "correct": true
+      },
+      "parallax": {
+        "pass": true,
+        "conf": 0.9924,
+        "note": "\u03a9=0.001 agree=1.00",
+        "correct": true
+      },
+      "vlm": null
+    },
+    {
+      "cls": "clutter_success",
+      "gt": true,
+      "appearance": {
+        "pass": true,
+        "conf": 0.85,
+        "note": "in_region=True support=True",
+        "correct": true
+      },
+      "parallax": {
+        "pass": true,
+        "conf": 0.9924,
+        "note": "\u03a9=0.001 agree=1.00",
+        "correct": true
+      },
+      "vlm": null
+    },
+    {
+      "cls": "clutter_success",
+      "gt": true,
+      "appearance": {
+        "pass": true,
+        "conf": 0.85,
+        "note": "in_region=True support=True",
+        "correct": true
+      },
+      "parallax": {
+        "pass": true,
+        "conf": 0.9924,
+        "note": "\u03a9=0.001 agree=1.00",
+        "correct": true
+      },
+      "vlm": null
+    },
+    {
+      "cls": "clutter_success",
+      "gt": true,
+      "appearance": {
+        "pass": true,
+        "conf": 0.85,
+        "note": "in_region=True support=True",
+        "correct": true
+      },
+      "parallax": {
+        "pass": true,
+        "conf": 0.9924,
+        "note": "\u03a9=0.001 agree=1.00",
+        "correct": true
+      },
+      "vlm": null
+    },
+    {
+      "cls": "clutter_success",
+      "gt": true,
+      "appearance": {
+        "pass": true,
+        "conf": 0.85,
+        "note": "in_region=True support=True",
+        "correct": true
+      },
+      "parallax": {
+        "pass": true,
+        "conf": 0.9924,
+        "note": "\u03a9=0.001 agree=1.00",
+        "correct": true
+      },
+      "vlm": null
+    },
+    {
+      "cls": "decoy",
+      "gt": false,
+      "appearance": {
+        "pass": true,
+        "conf": 0.85,
+        "note": "in_region=True support=True",
+        "correct": false
+      },
+      "parallax": {
+        "pass": false,
+        "conf": 0.072,
+        "note": "\u03a9=0.349 agree=0.50",
+        "correct": true
+      },
+      "vlm": null
+    },
+    {
+      "cls": "decoy",
+      "gt": false,
+      "appearance": {
+        "pass": true,
+        "conf": 0.85,
+        "note": "in_region=True support=True",
+        "correct": false
+      },
+      "parallax": {
+        "pass": false,
+        "conf": 0.0717,
+        "note": "\u03a9=0.350 agree=0.50",
+        "correct": true
+      },
+      "vlm": null
+    },
+    {
+      "cls": "decoy",
+      "gt": false,
+      "appearance": {
+        "pass": true,
+        "conf": 0.85,
+        "note": "in_region=True support=True",
+        "correct": false
+      },
+      "parallax": {
+        "pass": false,
+        "conf": 0.0883,
+        "note": "\u03a9=0.312 agree=0.50",
+        "correct": true
+      },
+      "vlm": null
+    },
+    {
+      "cls": "decoy",
+      "gt": false,
+      "appearance": {
+        "pass": true,
+        "conf": 0.85,
+        "note": "in_region=True support=True",
+        "correct": false
+      },
+      "parallax": {
+        "pass": false,
+        "conf": 0.0709,
+        "note": "\u03a9=0.352 agree=0.50",
+        "correct": true
+      },
+      "vlm": null
+    },
+    {
+      "cls": "decoy",
+      "gt": false,
+      "appearance": {
+        "pass": true,
+        "conf": 0.85,
+        "note": "in_region=True support=True",
+        "correct": false
+      },
+      "parallax": {
+        "pass": false,
+        "conf": 0.075,
+        "note": "\u03a9=0.342 agree=0.50",
+        "correct": true
+      },
+      "vlm": null
+    },
+    {
+      "cls": "decoy",
+      "gt": false,
+      "appearance": {
+        "pass": true,
+        "conf": 0.85,
+        "note": "in_region=True support=True",
+        "correct": false
+      },
+      "parallax": {
+        "pass": false,
+        "conf": 0.0778,
+        "note": "\u03a9=0.335 agree=0.50",
+        "correct": true
+      },
+      "vlm": null
+    },
+    {
+      "cls": "occluded_success",
+      "gt": true,
+      "appearance": {
+        "pass": true,
+        "conf": 0.85,
+        "note": "in_region=True support=True",
+        "correct": true
+      },
+      "parallax": {
+        "pass": true,
+        "conf": 0.9148,
+        "note": "\u03a9=0.016 agree=1.00",
+        "correct": true
+      },
+      "vlm": null
+    },
+    {
+      "cls": "occluded_success",
+      "gt": true,
+      "appearance": {
+        "pass": true,
+        "conf": 0.85,
+        "note": "in_region=True support=True",
+        "correct": true
+      },
+      "parallax": {
+        "pass": true,
+        "conf": 0.9148,
+        "note": "\u03a9=0.016 agree=1.00",
+        "correct": true
+      },
+      "vlm": null
+    },
+    {
+      "cls": "occluded_success",
+      "gt": true,
+      "appearance": {
+        "pass": true,
+        "conf": 0.85,
+        "note": "in_region=True support=True",
+        "correct": true
+      },
+      "parallax": {
+        "pass": true,
+        "conf": 0.9148,
+        "note": "\u03a9=0.016 agree=1.00",
+        "correct": true
+      },
+      "vlm": null
+    },
+    {
+      "cls": "occluded_success",
+      "gt": true,
+      "appearance": {
+        "pass": true,
+        "conf": 0.85,
+        "note": "in_region=True support=True",
+        "correct": true
+      },
+      "parallax": {
+        "pass": true,
+        "conf": 0.9148,
+        "note": "\u03a9=0.016 agree=1.00",
+        "correct": true
+      },
+      "vlm": null
+    },
+    {
+      "cls": "occluded_success",
+      "gt": true,
+      "appearance": {
+        "pass": true,
+        "conf": 0.85,
+        "note": "in_region=True support=True",
+        "correct": true
+      },
+      "parallax": {
+        "pass": true,
+        "conf": 0.9148,
+        "note": "\u03a9=0.016 agree=1.00",
+        "correct": true
+      },
+      "vlm": null
+    },
+    {
+      "cls": "occluded_success",
+      "gt": true,
+      "appearance": {
+        "pass": true,
+        "conf": 0.85,
+        "note": "in_region=True support=True",
+        "correct": true
+      },
+      "parallax": {
+        "pass": true,
+        "conf": 0.9148,
+        "note": "\u03a9=0.016 agree=1.00",
+        "correct": true
+      },
+      "vlm": null
+    },
+    {
+      "cls": "empty",
+      "gt": false,
+      "appearance": {
+        "pass": false,
+        "conf": 0.9,
+        "note": "no object segmented",
+        "correct": true
+      },
+      "parallax": {
+        "pass": false,
+        "conf": 0.0,
+        "note": "\u03a9=0.000 agree=0.00",
+        "correct": true
+      },
+      "vlm": null
+    },
+    {
+      "cls": "empty",
+      "gt": false,
+      "appearance": {
+        "pass": false,
+        "conf": 0.9,
+        "note": "no object segmented",
+        "correct": true
+      },
+      "parallax": {
+        "pass": false,
+        "conf": 0.0,
+        "note": "\u03a9=0.000 agree=0.00",
+        "correct": true
+      },
+      "vlm": null
+    },
+    {
+      "cls": "empty",
+      "gt": false,
+      "appearance": {
+        "pass": false,
+        "conf": 0.9,
+        "note": "no object segmented",
+        "correct": true
+      },
+      "parallax": {
+        "pass": false,
+        "conf": 0.0,
+        "note": "\u03a9=0.000 agree=0.00",
+        "correct": true
+      },
+      "vlm": null
+    },
+    {
+      "cls": "empty",
+      "gt": false,
+      "appearance": {
+        "pass": false,
+        "conf": 0.9,
+        "note": "no object segmented",
+        "correct": true
+      },
+      "parallax": {
+        "pass": false,
+        "conf": 0.0,
+        "note": "\u03a9=0.000 agree=0.00",
+        "correct": true
+      },
+      "vlm": null
+    },
+    {
+      "cls": "empty",
+      "gt": false,
+      "appearance": {
+        "pass": false,
+        "conf": 0.9,
+        "note": "no object segmented",
+        "correct": true
+      },
+      "parallax": {
+        "pass": false,
+        "conf": 0.0,
+        "note": "\u03a9=0.000 agree=0.00",
+        "correct": true
+      },
+      "vlm": null
+    },
+    {
+      "cls": "empty",
+      "gt": false,
+      "appearance": {
+        "pass": false,
+        "conf": 0.9,
+        "note": "no object segmented",
+        "correct": true
+      },
+      "parallax": {
+        "pass": false,
+        "conf": 0.0,
+        "note": "\u03a9=0.000 agree=0.00",
+        "correct": true
+      },
+      "vlm": null
+    }
+  ]
+}
