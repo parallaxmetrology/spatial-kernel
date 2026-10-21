@@ -1,9 +1,8 @@
 name: demo
 on:
-  # manual only while the repository is private; add the push trigger when it goes public:
-  # push:
-  #   branches: [main]
-  #   paths: ["docs/**"]
+  push:
+    branches: [main]
+    paths: ["docs/**"]
   workflow_dispatch:
 permissions:
   contents: read
