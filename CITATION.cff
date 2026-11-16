@@ -15,5 +15,6 @@ keywords: [robotics, embodied AI, success detection, VLM evaluation, stereo para
 abstract: >
   A deterministic check of robot task outcomes: task-region geometry plus a
   two-view parallax test on ordinary photos that separates real 3D objects from
-  flat printed decoys. On real phone photos, Gemini Robotics-ER passed 10 of 18
-  flat decoys as real objects; the two-view check caught all 10.
+  flat printed decoys. On real phone photos, Gemini Robotics-ER passed 10 of 15
+  flat decoys as real objects. The two-view check identified all 15 as flat.
+  Both methods correctly rejected the three empty-table controls.

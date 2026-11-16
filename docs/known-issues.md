@@ -28,7 +28,7 @@ The 15 px threshold and 90 px mis-track cap were set on this setup: iPhone 14 Pl
 
 ## 7. The Gemini comparison is small
 
-27 scenes (9 kinds × 3), one model (`gemini-robotics-er-1.6-preview`), one neutral prompt that names the object, one view per scene, one run. Model answers can change between runs and versions. The recorded answers are verbatim in [`realframe_vlm.json`](../results/recorded/cups2/realframe_vlm.json). It shows that a strong embodied model *can* be fooled by a print. It doesn't estimate how often.
+27 scenes (15 flat decoys, 9 real objects, and 3 empty-table controls), one model (`gemini-robotics-er-1.6-preview`), one neutral prompt that names the object, one view per scene, one run. Model answers can change between runs and versions. The recorded answers are verbatim in [`realframe_vlm.json`](../results/recorded/cups2/realframe_vlm.json). It shows that a strong embodied model *can* be fooled by a print. It doesn't estimate how often.
 
 ## 8. Older recorded runs
 

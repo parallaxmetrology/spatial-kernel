@@ -2,12 +2,12 @@
 
 **Is it really there? A deterministic check of robot task outcomes. No learned judge.**
 
-Ask a vision-language model whether a robot put the mug on the table and it looks at one picture. A picture of a mug is not a mug. On ordinary phone photos of a tabletop, **Gemini Robotics-ER passed 10 of 18 flat printed decoys as real objects present**. A two-view check with standard computer vision caught all 10: take a second photo ~10 cm to the side, and a real object shifts more than the table it stands on, while a print lies in the table plane and shifts with it.
+Ask a vision-language model whether a robot put the mug on the table and it looks at one picture. A picture of a mug is not a mug. On ordinary phone photos of a tabletop, **Gemini Robotics-ER passed 10 of 15 flat printed decoys as real objects present**. A two-view check with standard computer vision identified all 15 prints as flat: take a second photo ~10 cm to the side, and a real object shifts more than the table it stands on, while a print lies in the table plane and shifts with it.
 
 | on the same real photos (27 scenes, 9 kinds) | flat decoys passed as real | real objects passed | empty table passed |
 |---|---|---|---|
-| Gemini Robotics-ER 1.6, one view, neutral prompt | **10 / 18** | 9 / 9 | 0 / 3 |
-| Two-view parallax check (this repo) | **0 / 18** | 9 / 9 | 0 / 3 |
+| Gemini Robotics-ER 1.6, one view, neutral prompt | **10 / 15** | 9 / 9 | 0 / 3 |
+| Two-view parallax check (this repo) | **0 / 15** | 9 / 9 | 0 / 3 |
 
 Across the full photo set (113 scenes, 19 object types plus a bare table) the check is right on 99 of 109 cleanly detected scenes and loses track of the object in 4. Where it fails is in [docs/known-issues.md](docs/known-issues.md), and it's worth reading: the model and the geometry fail in *different* places, which is the point.
 

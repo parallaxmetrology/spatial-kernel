@@ -4,9 +4,9 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Real or printed?</title>
-<meta name="description" content="A robot was told to put a mug on the table. Is that a real mug, or a sheet of paper? Gemini Robotics-ER passed 10 of 18 printed decoys. Your turn, then see a second photo.">
+<meta name="description" content="A robot was told to put a mug on the table. Is that a real mug, or a sheet of paper? Gemini Robotics-ER passed 10 of 15 printed decoys. Your turn, then see a second photo.">
 <meta property="og:title" content="Real or printed?">
-<meta property="og:description" content="Gemini Robotics-ER passed 10 of 18 printed decoys as real objects. Can you do better from one photo? Then flip to a second view and watch the prints stay flat.">
+<meta property="og:description" content="Gemini Robotics-ER passed 10 of 15 printed decoys as real objects. Can you do better from one photo? Then flip to a second view and watch the prints stay flat.">
 <meta property="og:image" content="https://parallaxmetrology.github.io/spatial-kernel/og-real-or-printed.png">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -91,7 +91,7 @@
   <section id="intro">
     <p class="eyebrow">Spatial Kernel · a game</p>
     <h1>Real or <em>printed?</em></h1>
-    <p class="lede">A robot was told to put a mug on the table. A vision model looked at the photo and judged whether it worked. Sometimes the "mug" is a sheet of paper. <b>Gemini Robotics-ER passed 10 of 18 printed decoys as real objects.</b> You get the same single photo it got. Then flip to a second photo taken 10 cm to the side.</p>
+    <p class="lede">A robot was told to put a mug on the table. A vision model looked at the photo and judged whether it worked. Sometimes the "mug" is a sheet of paper. <b>Gemini Robotics-ER passed 10 of 15 printed decoys as real objects.</b> You get the same single photo it got. Then flip to a second photo taken 10 cm to the side.</p>
     <div class="how">
       <div><b>1 · One photo</b>Is there a real object on the table? Same question, same picture the model saw.</div>
       <div><b>2 · The model</b>See what Gemini Robotics-ER answered, in its own words.</div>
@@ -135,7 +135,7 @@
 
   <section class="about">
     <p><b>What's going on.</b> One photo doesn't contain height. A good print of a mug and a mug can produce nearly the same pixels, so any judge that looks at one frame has to guess. A second photo from a slightly different spot does contain height: things above the table shift more than the table does. The <a href="https://github.com/parallaxmetrology/spatial-kernel">Spatial Kernel</a> measures that shift with plain computer vision: no training, same answer every time.</p>
-    <p><b>The fine print.</b> These are 27 scenes the model was asked about: one model version, one neutral prompt, one run. On the full set of 113 photo pairs the geometry check is right on 99 of 109 it could track. It struggles with clear glass and with very low objects, and a print taped onto a box fools it (the print really is raised). All of that is in the <a href="https://github.com/parallaxmetrology/spatial-kernel/blob/main/docs/known-issues.md">known issues</a>. Photos by the author, CC BY 4.0.</p>
+    <p><b>The fine print.</b> The recorded run used 15 flat prints, 9 real objects, and 3 empty-table controls. Both methods correctly rejected all 3 empty tables. The study used one model version and one neutral prompt per scene. On the full set of 113 photo pairs the geometry check is right on 99 of 109 it could track. It struggles with clear glass and with very low objects, and a print taped onto a box fools it (the print really is raised). All of that is in the <a href="https://github.com/parallaxmetrology/spatial-kernel/blob/main/docs/known-issues.md">known issues</a>. Photos by the author, CC BY 4.0.</p>
   </section>
 </main>
 <footer><div class="wrap">Parallax Metrology · <a href="https://www.parallaxmetrology.com">parallaxmetrology.com</a> · <a href="https://github.com/parallaxmetrology/spatial-kernel">code</a></div></footer>
@@ -146,7 +146,7 @@ let data = [], deck = [], i = 0, score = {you: 0, gem: 0, geo: 0, gemFooled: 0, 
 
 function shuffle(a) { for (let k = a.length - 1; k > 0; k--) { const j = Math.floor(Math.random() * (k + 1)); [a[k], a[j]] = [a[j], a[k]]; } return a; }
 function buildDeck() {
-  const fooled = shuffle(data.filter(d => !d.real && d.gemini_pass));
+  const fooled = shuffle(data.filter(d => !d.real && !d.id.startsWith('bare') && d.gemini_pass));
   const otherFake = shuffle(data.filter(d => !d.real && !d.gemini_pass && !d.id.startsWith('bare')));
   const real = shuffle(data.filter(d => d.real));
   const empty = shuffle(data.filter(d => d.id.startsWith('bare')));

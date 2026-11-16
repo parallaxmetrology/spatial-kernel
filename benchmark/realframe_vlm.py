@@ -87,6 +87,24 @@ def judge(path, api_key, noun):
         False if ("FAIL" in text.upper() and "PASS" not in text.upper()) else None)
     return v, text.strip()
 
+def print_summary(verdicts):
+    groups = {"flat print": [], "real object": [], "empty table": []}
+    for key, result in verdicts.items():
+        if class_of(key) == "bare table":
+            group = "empty table"
+        elif result["real_object"]:
+            group = "real object"
+        else:
+            group = "flat print"
+        groups[group].append(result["gemini_pass"])
+
+    for group, calls in groups.items():
+        passes = sum(call is True for call in calls)
+        unknown = sum(call is None for call in calls)
+        detail = f" ({unknown} unresolved)" if unknown else ""
+        print(f"Gemini PASS on {group}: {passes} / {len(calls)}{detail}")
+
+
 def main():
     api_key = None
     for line in open(os.path.join(BASE, ".env")):
@@ -115,7 +133,6 @@ def main():
     print(f"{'scene':<24}{'noun':<20}{'real?':<7}{'Gemini':<8}{'fooled':<8}{'parallax':<10}{'raw'}")
     print("-" * 100)
     out = {}
-    n_fool = n_real_pass = n_real = 0
     for key in todo:
         cls = class_of(key); noun, real = CLASS[cls]
         v, text = judge(dot1[key], api_key, noun)
@@ -124,15 +141,11 @@ def main():
         pv = par.get(key, "")
         pv_short = "RAISED" if "RAISED" in pv else ("FLAT" if "FLAT" in pv else pv)
         first = text.splitlines()[0] if text else ""
-        if real:
-            n_real += 1; n_real_pass += int(v is True)
-        n_fool += int(fooled)
         print(f"{key:<24}{noun:<20}{str(real):<7}{gem:<8}{('YES' if fooled else '-'):<8}{pv_short:<10}{first[:30]}")
         out[key] = dict(noun=noun, real_object=real, gemini_pass=v, fooled=fooled,
                         parallax=pv, raw=text)
     print("-" * 100)
-    print(f"Gemini fooled (PASS on a flat print / empty): {n_fool} / {sum(1 for k in todo if not CLASS[class_of(k)][1])}")
-    print(f"Gemini correct on real objects: {n_real_pass} / {n_real}")
+    print_summary(out)
     os.makedirs(os.path.dirname(PARALLAX_JSON), exist_ok=True)
     json.dump(out, open(os.path.join(os.path.dirname(PARALLAX_JSON), "realframe_vlm.json"), "w"), indent=2)
     print("raw verdicts saved to", os.path.relpath(os.path.join(os.path.dirname(PARALLAX_JSON), "realframe_vlm.json")))

@@ -27,7 +27,7 @@ python benchmark/realframe_parallax.py          # writes results/cups2/, compare
 | real mug, paper cup, box on its side | yes | 9 / 9 | 9 / 9 |
 | bare table | — | 0 / 3 | 3 / 3 |
 
-Gemini passed 10 of 18 decoys and the check caught all 10. Gemini wasn't careless: on the cut-outs it said things like "appears to be a flat sticker or image of a mug". Where the print is good, one view doesn't hold the answer.
+Gemini passed 10 of 15 flat decoys as real. The check marked all 15 as flat and all 9 real objects as raised. Both methods correctly rejected the 3 empty-table controls. Gemini wasn't careless: on the cut-outs it said things like "appears to be a flat sticker or image of a mug". Where the print is good, one view doesn't hold the answer.
 
 ## Placement precision (real objects, cm)
 
